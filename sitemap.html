@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網站導覽</title>
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="./js/jquery.3.31.js">
+    </script>
+
+    <script src="./js/jquery.ui.js "></script>
+    <script src="./js/jquery.mCustomScrollbar.concat.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper wrapper_color outerWrap">
+      <!-- searchArea -->
+        <div class="searchArea" style="">
+            <!-- searchArea -->
+            <a href="javascript:;" class="btnClose">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="inner">
+                <!-- inner -->
+                <form class="search-container">
+                    <input type="text" id="search-bar" placeholder="搜尋關鍵字...">
+                    <button type="submit" class="search_Button">
+                        <i class="fa fa-search"></i>
+                     </button>
+                </form>
+                <!-- inner end -->
+            </div>
+
+        </div>
+        <!--loginArea-->
+        <div class="loginArea moduleBox" id="moduleMember">
+            <div class="box">
+                <!--box-->
+                <a id="closeLogin" class="moduleClose"><i class="fas fa-times"></i></a>
+                <div class="login">
+                    <!--login-->
+                    <h4 class="m-member-form__title h-t4">會員登入</h4>
+
+                    <label class="m-member-form__label" for="帳號">*帳號</label>
+                    <div class="e-form-square mb-1">
+                        <i class="e-form-square__icon far fa-user"></i>
+                        <input class="e-form-square__input" type="email" id="email" name="email">
+                    </div>
+                    <label class="m-member-form__label" for="密碼">*密碼</label>
+                    <div class="e-form-square mb-1"><i class="e-form-square__icon fas fa-lock"></i>
+                        <input class="e-form-square__input" type="password" id="password" name="password">
+                    </div>
+                    <label class="m-member-form__label" for="驗證碼">*驗證碼</label>
+                    <div class="e-form-square__vertify mb-1 m-member-form__buttons">
+
+                        <input class="e-form-square__input" type="text">
+                        <img src="./img/vertify.png" alt="" class="e-img">
+                    </div>
+                    <div class="btn">
+                        <a class="login_btn_status" style="cursor:pointer" onclick="login_btn();">登入</a><i class="fa fa-spinner fa-spin login_loading_status" style="display:none"></i>
+                    </div>
+                    <div class="btns ">
+                        <a class="btn_forget">忘記密碼</a>
+                    </div>
+                    <div class="btns">
+                        還不是會員?
+                        <a class="btn_register" onclick="location.href='">註冊會員</a>
+                    </div>
+                </div>
+                <!--login end-->
+
+
+
+                <div class="forgetCheck">
+                    <!--forgetCheck-->
+                    <h4 class="m-member-form__title h-t4">查詢密碼</h4>
+                    <p class="my-2">請輸入您申請會員時填寫的資料， 核對無誤後，系統會將您的密碼寄至您的聯絡信箱：
+                    </p>
+                    <label class="m-member-form__label" for="帳號">* 註冊帳號</label>
+                    <div class="e-form-square mb-1">
+                        <i class="e-form-square__icon far fa-user"></i>
+                        <input class="e-form-square__input" type="email" id="email_check" name="email">
+                    </div>
+                    <label class="m-member-form__label" for="密碼">*註冊密碼</label>
+                    <div class="e-form-square mb-1"><i class="e-form-square__icon fas fa-lock"></i>
+                        <input class="e-form-square__input" type="password" id="password_check" name="password">
+                    </div>
+                    <div class="btn">
+                        <a class="btn_color1 forget_btn_status">查詢</a>
+                    </div>
+                    <div class="btns my-2">
+                        <a class="btn_relog ">重新登入</a>
+                    </div>
+                    <p class="h-m1"><i class=" fa fa-circle-notch"></i> 如為企業用戶，註冊email為貴公司聯絡窗口email </p>
+                </div>
+                <!--forgetCheck end-->
+            </div>
+            <!--box end-->
+        </div>
+        <!--loginArea end-->
+        <section class="Nav">
+
+            <nav class="topNavWrap">
+
+                <ul class="subNavTxt">
+
+                    <li><a target="＃" href="/ ">Home</a> /</li>
+                    <li><a target="＃" href="/"> 聯絡我們 /</a>
+                    </li>
+                    <li><a target="＃" href=" ">網站導覽</a> /</li>
+                    <li><a target="＃" href="/">常見問題</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+            <nav class="subNavWrap">
+
+                <a href="javascript:void(0)" class="menuControl" title="展開選單">展開選單</a>
+                <a href="/" title="CAELogo-回首頁" class="logo">
+                    <h1>CAE雲端及試作服務加值中心</h1>
+                </a>
+                <div class="subNav menu">
+                    <!-- <a href="#U" id="U" name="U" accesskey="U" class="acc" title="上方選單區導盲磚">:::</a> -->
+                    <ul class="subNavTxt_right">
+
+                        <li class="search_btn">
+                            <a href="/" title="search_icon" class="">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </li>
+                        <li class="login_btn">
+                            <a href="/" title="登入註冊" class="">
+
+                                <div class="menu_box" style="background-image: url('./img/Doctor.png')"> </div>
+
+                                <!-- <div class="dsc"> 登入/註冊</div> -->
+                                <div class="dsc "> 登出</div>
+                            </a>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+            </nav>
+
+            <nav class="mainNavWrap hideMenu">
+                <ul class="topNav">
+                    <li class="NoLv3 haveSecond">
+                        <a class=" " href="javascript:void(0) ">
+                            <i class="fab fa-sellsy"></i><span>中心簡介 </span>
+                        </a>
+                        <ul>
+                            <li class="Level2 ">
+                                <a target="_blank ">
+                                    關於CAE中心
+                                </a>
+
+                            </li>
+
+                            <li class="Level2 ">
+                                <a target="_self " href=" "> 聯絡方式</a>
+
+                            </li>
+
+                            <li class="Level2 ">
+                                <a target="_self " href=" ">
+                                    服務項目介紹
+                                </a>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="NoLv3 haveSecond">
+                        <a href="javascript:void(0)">
+                            <i class="fas fa-bullhorn"></i><span>公告服務</span>
+                        </a>
+                        <ul>
+                            <li class="Level2 ">
+                                <a href="# ">
+                                    技術新知
+                                </a>
+                            </li>
+
+                            <li class="Level2 ">
+                                <a href="#"> 活動集錦
+                                </a>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="NoLv3 haveSecond ">
+                        <a href="javascript:void(0) ">
+                            <i class="fas fa-chalkboard-teacher"></i><span>研討會/課程</span>
+                        </a>
+                        <ul>
+                            <li class="Level2 ">
+                                <a target="_self " href="#">
+                                    研討會/說明會
+                                </a>
+
+                            </li>
+
+                            <li class="Level2 ">
+                                <a target=" _self " href="#"> 教育訓練課程
+                                </a>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="NoLv3 haveSecond ">
+                        <a href="javascript:void(0)">
+                            <i class="fas fa-laptop-code"></i><span>軟體模擬分析</span>
+                        </a>
+                        <ul>
+                            <li class="Level2 ">
+                                <a href=" "> 軟體簡介
+                                </a>
+                            </li>
+
+                            <li class="Level2 ">
+                                <a href="# "> 預約
+                                </a>
+                            </li>
+
+                            <li class="Level2 ">
+                                <a href="#"> 模擬執行
+                                </a>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="NoLv3 haveSecond ">
+                        <a href="javascript:void(0)">
+                            <i class="fas fa-briefcase"></i> <span>互動服務</span>
+                        </a>
+                        <ul>
+                            <li class="Level2 ">
+                                <a target=" _self " href="#"> 試作服務 </a>
+                            </li>
+
+                            <li class="Level2 ">
+                                <a target="_self " href="#">
+                                    專案服務
+                                </a>
+                            </li>
+                            <li class="Level2 ">
+                                <a target=" _self " href="#"> 常見問題
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="NoLv3 haveSecond ">
+                        <a href="javascript:void(0) " onclick="location.href='./soft.html'">
+                            <i class="fas fa-paste"></i><span>成果展示</span>
+                        </a>
+                        <ul>
+                            <li class="Level2 ">
+                                <a title="案例展示 " href="＃ " rel="# ">案例展示</a>
+                            </li>
+
+                            <li class="Level2 ">
+                                <a title="成果發表 " href=" ＃" rel="#">成果發表 </a>
+
+
+
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="NoLv3 haveSecond ">
+                        <a href="javascript:void(0) ">
+                            <i class="far fa-user"></i><span>會員專區</span>
+                        </a>
+                        <ul>
+                            <li class="Level2 ">
+                                <a href="#"> 會員權益 </a>
+                            </li>
+                            <li class="Level2 ">
+                                <a href="# ">會員註冊 </a>
+                            </li>
+                            <li class="Level2 ">
+                                <a href="#"> 會員登入</a>
+                            </li>
+
+                            <li class="Level2 ">
+                                <a href="# "> 忘記密碼 </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" ">
+                        <a target=" _self " href="#">
+                            <i class="far fa-newspaper"></i><span> 電子報</span>
+                        </a>
+
+                    </li>
+
+
+
+                    <li class=" mobileShow NoLv3 ">
+                        <a target="_self " href="#">
+                            <span>聯絡我們</span>
+                        </a>
+
+                    </li>
+
+                    <li class=" mobileShow ">
+                        <a target="_self " href="/library ">
+                            <span>網站導覽</span>
+                        </a>
+
+                    </li>
+
+
+
+                    <li class=" mobileShow NoLv3 ">
+                        <a target="_self " href="/ ">
+                            <span> 常見問題</span>
+                        </a>
+
+                    </li>
+
+
+                </ul>
+            </nav>
+        </section>
+
+        <section class=" bannerPic " style="background-image: url(https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+
+            <div class="container">
+                <div class="col-md-12">
+
+
+                    <h1> 網站地圖</h1>
+
+
+                </div>
+            </div>
+        </section>
+        <article>
+
+            <section class="main-content">
+                <div class="row">
+
+
+                    <div class="col-md-12 ">
+                        <div class=" m-ponent px-sm-3">
+                            <div class="container e-sitemap">
+
+
+                                <div class="row ">
+                                    <div class="col-md-3">
+                                        <ul class="">
+                                            <li class="title">中心簡介</li>
+                                            <li><a href="">關於CAE中心</a></li>
+                                            <li><a href="">聯絡方式</a></li>
+                                            <li><a href="">服務項目介紹</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <ul class="">
+                                            <li class="title">公告服務</li>
+                                            <li><a href="">焦點新聞</a></li>
+                                            <li><a href="">技術新知</a></li>
+                                            <li><a href="">活動集錦</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <ul class="">
+                                            <li class="title">研討會/課程</li>
+                                            <li><a href="">研討會/說明會</a></li>
+                                            <li><a href="">教育訓練課程</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <ul class="">
+                                            <li class="title">軟體模擬分析</li>
+                                            <li><a href="">軟體簡介</a></li>
+                                            <li><a href="">預約</a></li>
+                                            <li><a href="">模擬執行</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-3">
+                                        <ul class="">
+                                            <li class="title">互動服務</li>
+                                            <!-- <li><a href="BBS.aspx">試作服務</a></li> -->
+                                            <li><a href="">專案服務</a></li>
+                                            <li><a href="">常見問題</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <ul class="">
+                                            <li class="title">成果展示</li>
+                                            <li><a href="">案例展示</a></li>
+                                            <li><a href="">成果發表</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <ul class="">
+                                            <li class="title">會員專區</li>
+                                            <li><a href="">會員權益</a></li>
+                                            <li><a href="">會員註冊</a></li>
+                                            <li><a href="#">會員登入</a></li>
+                                            <li><a href="#">忘記密碼</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <ul class="">
+                                            <li class="title">電子報</li>
+                                            <li><a href="">電子報</a></li>
+                                        </ul>
+                                    </div>
+
+
+                                    <!--end of cae_ctn cate-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+
+        </article>
+
+
+
+
+        <footer class="l-footer pt-5 pb-1">
+            <div class="container px-md-4 px-lg-2">
+                <div class="row justify-content-between">
+
+                    <div class="col-xl-7 mb-3 mb-xl-0">
+                        <h2 class="mb-1 fon">CAE雲端服務加值中心</h2>
+                        <ul class="l-footer__connection">
+                            <li>地址：高雄市楠梓區朝仁路55號</li>
+                            <li>電話：07-3517161-6253,6250 / 傳真 07-3512981</li>
+                            <li>服務時間：週一至週五 08:30-18:00 週六、日及例假日休息</li>
+                            <li>瀏覽人次：71090</li>
+                            <li>建議使用 Internet Explorer 11 以上版本、最新版本Chrome或Firefox瀏覽器， 並設定 1024ｘ768 以上解析度，以獲得最佳瀏覽體驗</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 mb-3 mb-xl-0 d-flex">
+                        <div class="l-footer__company ">
+                            <h1 class="h-hide-text mb-2">
+                                <a href="#" title="logo" style="background-image: url('./img/cae_foot_qr.png')" class="e-brand l-footer__Qimg"></a>
+                            </h1>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+        <div class="othersBtn">
+            <a href="javascript:;" class="fixedBtn goTop" title="回頂端"><b>Top</b></a>
+            <!-- <a href="javascript:history.back()" class="fixedBtn goBack" title="回上頁"><b>回上頁</b></a> -->
+            <a href="javascript:;" class="closeOpenMenu" title="關閉選單">關閉選單</a>
+        </div>
+
+    </div>
+</body>
+
+<script src="./js/all.js ">
+</script>
+
+</html>

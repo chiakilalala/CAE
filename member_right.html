@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員註冊</title>
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="./js/jquery.3.31.js">
+    </script>
+
+    <script src="./js/jquery.ui.js "></script>
+    <script src="./js/jquery.mCustomScrollbar.concat.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper wrapper_color outerWrap">
+        <!-- searchArea -->
+        <div class="searchArea" style="">
+            <!-- searchArea -->
+            <a href="javascript:;" class="btnClose">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="inner">
+                <!-- inner -->
+                <form class="search-container">
+                    <input type="text" id="search-bar" placeholder="搜尋關鍵字...">
+                    <button type="submit" class="search_Button">
+                        <i class="fa fa-search"></i>
+                     </button>
+                </form>
+                <!-- inner end -->
+            </div>
+
+        </div>
+        <!--loginArea-->
+        <div class="loginArea moduleBox" id="moduleMember">
+            <div class="box">
+                <!--box-->
+                <a id="closeLogin" class="moduleClose"><i class="fas fa-times"></i></a>
+                <div class="login">
+                    <!--login-->
+                    <h4 class="m-member-form__title h-t4">會員登入</h4>
+
+                    <label class="m-member-form__label" for="帳號">*帳號</label>
+                    <div class="e-form-square mb-1">
+                        <i class="e-form-square__icon far fa-user"></i>
+                        <input class="e-form-square__input" type="email" id="email" name="email">
+                    </div>
+                    <label class="m-member-form__label" for="密碼">*密碼</label>
+                    <div class="e-form-square mb-1"><i class="e-form-square__icon fas fa-lock"></i>
+                        <input class="e-form-square__input" type="password" id="password" name="password">
+                    </div>
+                    <label class="m-member-form__label" for="驗證碼">*驗證碼</label>
+                    <div class="e-form-square__vertify mb-1 m-member-form__buttons">
+
+                        <input class="e-form-square__input" type="text">
+                        <img src="./img/vertify.png" alt="" class="e-img">
+                    </div>
+                    <div class="btn">
+                        <a class="login_btn_status" style="cursor:pointer" onclick="login_btn();">登入</a><i class="fa fa-spinner fa-spin login_loading_status" style="display:none"></i>
+                    </div>
+                    <div class="btns ">
+                        <a class="btn_forget">忘記密碼</a>
+                    </div>
+                    <div class="btns">
+                        還不是會員?
+                        <a class="btn_register" onclick="location.href='">註冊會員</a>
+                    </div>
+                </div>
+                <!--login end-->
+
+
+
+                <div class="forgetCheck">
+                    <!--forgetCheck-->
+                    <h4 class="m-member-form__title h-t4">查詢密碼</h4>
+                    <p class="my-2">請輸入您申請會員時填寫的資料， 核對無誤後，系統會將您的密碼寄至您的聯絡信箱：
+                    </p>
+                    <label class="m-member-form__label" for="帳號">* 註冊帳號</label>
+                    <div class="e-form-square mb-1">
+                        <i class="e-form-square__icon far fa-user"></i>
+                        <input class="e-form-square__input" type="email" id="email_check" name="email">
+                    </div>
+                    <label class="m-member-form__label" for="密碼">*註冊密碼</label>
+                    <div class="e-form-square mb-1"><i class="e-form-square__icon fas fa-lock"></i>
+                        <input class="e-form-square__input" type="password" id="password_check" name="password">
+                    </div>
+                    <div class="btn">
+                        <a class="btn_color1 forget_btn_status">查詢</a>
+                    </div>
+                    <div class="btns my-2">
+                        <a class="btn_relog ">重新登入</a>
+                    </div>
+                    <p class="h-m1"><i class=" fa fa-circle-notch"></i> 如為企業用戶，註冊email為貴公司聯絡窗口email </p>
+                </div>
+                <!--forgetCheck end-->
+            </div>
+            <!--box end-->
+        </div>
+        <!--loginArea end-->
+        <section class="Nav">
+            <nav class="topNavWrap">
+
+                <ul class="subNavTxt">
+
+                    <li><a target="＃" href="/ ">Home</a> /</li>
+                    <li><a target="＃" href="/contact.html"> 聯絡我們 /</a>
+                    </li>
+                    <li><a target="＃" href="/sitemap.html ">網站導覽</a> /</li>
+                    <li><a target="＃" href="/faq.html">常見問題</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+            <nav class="subNavWrap">
+
+                <a href="javascript:void(0)" class="menuControl" title="展開選單">展開選單</a>
+                <a href="/" title="CAELogo-回首頁" class="logo">
+                    <h1>CAE雲端及試作服務加值中心</h1>
+                </a>
+                <div class="subNav menu">
+                    <!-- <a href="#U" id="U" name="U" accesskey="U" class="acc" title="上方選單區導盲磚">:::</a> -->
+                    <ul class="subNavTxt_right">
+
+                        <li class="search_btn btnSearch">
+                            <a href="javascript:;" title="search_icon" class="">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </li>
+                        <li class="login_btn">
+                            <a href="#moduleMember" title="登入註冊" class="openModule">
+                                <div class="menu_box" style="background-image: url('./img/Doctor.png')"> </div>
+                                <div class="dsc"> 登入/註冊</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+            <nav class="mainNavWrap hideMenu" style="">
+                <ul class="topNav">
+                    <li class="NoLv3 haveSecond">
+                        <a class=" " href="javascript:void(0) " onclick="window.location='about.html'">
+                            <i class="fab fa-sellsy"></i><span>中心簡介 </span>
+                        </a>
+                        <ul>
+                            <li class="Level2 ">
+                                <a target="_self" href="about.html">    關於CAE中心 </a>
+                            </li>
+
+                            <li class="Level2 ">
+                                <a target="_self " href="about.html"> 聯絡方式</a>
+
+                            </li>
+
+                            <li class="Level2 ">
+                                <a target="_self " href="about.html">
+                                    服務項目介紹</a>
+                           </li>
+                        </ul>
+                    </li>
+
+                    <li class="NoLv3 haveSecond">
+                        <a href="javascript:void(0)" onclick="window.location='news.html'">
+                            <i class="fas fa-bullhorn"></i><span>公告服務</span>
+                        </a>
+                        <ul>
+                            <li class="Level2 ">
+                                <a href="news.html">
+                                                技術新知
+                                                    </a>
+                            </li>
+                            <li class="Level2 ">
+                                <a href="Photogallery.html"> 活動集錦
+                                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="NoLv3 haveSecond ">
+                        <a href="javascript:void(0) " onclick="window.location='SeminarDetail.html'">
+                            <i class="fas fa-chalkboard-teacher" ></i><span>研討會/課程</span>
+                        </a>
+                        <ul>
+                            <li class="Level2 ">
+                                <a target="_self " href="SeminarDetail.html">
+                                              研討會/說明會
+                                            </a>
+                            </li>
+                            <li class="Level2 ">
+                                <a target=" _self " href="EduDetail.html"> 教育訓練課程
+                                        </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="NoLv3 haveSecond ">
+                        <a href="javascript:void(0)" onclick="window.location='soft.html'">
+                            <i class="fas fa-laptop-code"></i><span>軟體模擬分析</span>
+                        </a>
+                        <ul>
+                            <li class="Level2 ">
+                                <a href="soft.html "> 軟體簡介
+                                                        </a>
+                            </li>
+
+                            <li class="Level2 ">
+                                <a href="soft_login.html "> 預約
+                                                                 </a>
+                            </li>
+
+                            <li class="Level2 ">
+                                <a href="#"> 模擬執行
+                                                     </a>      
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="NoLv3 haveSecond ">
+                        <a href="javascript:void(0)" onclick="window.location='soft.html'">
+                            <i class="fas fa-briefcase"></i> <span>互動服務</span>
+                        </a>
+                        <ul>
+                            <li class="Level2 ">
+                                <a target=" _self " href="#"> 試作服務 </a>
+                            </li>
+                            <li class="Level2 ">
+                                <a target="_self " href="#">
+                                            專案服務
+                                                     </a>
+                            </li>
+                            <li class="Level2 ">
+                                <a target=" _self " href="faq.html"> 常見問題
+                                                                            </a>
+                            </li>     
+                        </ul>
+                    </li>
+
+                    <li class="NoLv3 haveSecond ">
+                        <a href="javascript:void(0) " onclick="window.location='result.html'">
+                            <i class="fas fa-paste"></i><span>成果展示</span>
+                        </a>
+                        <ul>
+                            <li class="Level2 ">
+                                <a title="案例展示 " href="result.html " rel="# ">案例展示</a>
+                            </li>
+                            <li class="Level2 ">
+                                <a title="成果發表 " href="result.html" rel="#">成果發表 </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="NoLv3 haveSecond ">
+                        <a href="javascript:void(0) " onclick="window.location='member.html'">
+                            <i class="far fa-user"></i><span>會員專區</span>
+                        </a>
+                        <ul>
+                            <li class="Level2 ">
+                                <a href="member_rl.html"> 會員權益 </a>
+                            </li>
+                            <li class="Level2 ">
+                                <a href="member_register.html ">會員註冊 </a>
+                            </li>
+                            <li class="Level2 ">
+                                <a href="#"> 會員登入</a>
+                            </li>
+
+                            <li class="Level2 ">
+                                <a href="# "> 忘記密碼 </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" ">
+                        <a target=" _self " href="epaper.html">
+                            <i class="far fa-newspaper"></i><span> 電子報</span>
+                        </a>
+
+                    </li>
+
+                    <li class=" mobileShow NoLv3 ">
+                        <a target="_self " href="contact.html">
+                            <span>聯絡我們</span>
+                        </a>
+                    </li>
+
+                    <li class=" mobileShow ">
+                        <a target="_self " href="sitemap.html ">
+                            <span>網站導覽</span>
+                        </a>
+
+                    </li>
+
+                    <li class=" mobileShow NoLv3 ">
+                        <a target="_self " href="faq.html ">
+                            <span> 常見問題</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </section>
+
+        <article>
+
+            <section class="main-content">
+                <div class="row">
+
+
+
+                    <div class="col-md-12">
+                        <div class=" m-ponent px-sm-3">
+                            <h1 class="h-text-center font-weight-bolder"> CAE雲端及試作服務加值中心</h1>
+                            <h2>會員權益</h2>
+                            <div class="btn clearfix h-text-center">
+                                <a class="e-btn e-btn_secondary">會員註冊</a>
+                            </div>
+                            <div class="mem_des container" id="generic-tabs">
+
+                                <ul id="Member_tabs">
+                                    <li>
+                                        <a title="Home" href="#first-tab"> 會員等級</a>
+                                    </li>
+                                    <li>
+                                        <a title="Photos" href="#second-tab">會員權益</a>
+                                    </li>
+                                    <li>
+                                        <a title="About" href="#third-tab"> 各項優惠</a>
+                                    </li>
+                                    <li>
+                                        <a title="Contact" href="#fourth-tab">入會申請流程</a>
+                                    </li>
+                                    <li>
+                                        <a title="Contact" href="#fifth-tab">特別聲明</a>
+                                    </li>
+                                </ul>
+
+                                <div id="first-tab" class="tab-content">
+                                    <h3>CAE中心會員等級</h3>
+
+                                    <img src="./img/reg_lev_img001.gif" alt="" class="e-img ">
+
+                                    <p class="tit2">鑽石會員：企業/個人</p>
+                                    <p class="tit2">白金會員：企業/個人</p>
+                                    <p class="tit2">一般會員：僅註冊會員資料，不需繳費</p>
+                                    <p class="tit2">學生會員：僅限學生身分</p>
+                                    <p class="tit">上述各項會員申請以一次為限，一個統一編號或身份證號碼對應一組會員帳號。若重覆入會或以不實資料申請會籍，將取消會員資格與權益。每位會員累積的點數與權益限本人使用，不可轉讓於他人。</p>
+                                    <p class="tit">當會員資料異動時，請自行上網登錄入並修改會員資料，以免造成會員權益受損。</p>
+                                    <p class="tit">會員瞭解CAE雲端服務加值中心會員制度若有相關變更，得於官網公告或以電子郵件、簡訊通知之方式辦理，所變更或調整之內容，除特別告知者外，於公告或發出通知時生效。</p>
+
+                                </div>
+
+                                <div id="second-tab" class="tab-content">
+                                    <h3>CAE中心會員權益</h3>
+                                    <img src="./img/reg_ben_img_1.gif" alt="reg_ben_img_1.gif" class="e-img ">
+                                    <img src="./img/reg_ben_img_2.jpg" alt="reg_ben_img_2.gif" class="e-img ">
+                                    <img src="./img/reg_ben_img_3.gif" alt="reg_ben_img_3.gif" class="e-img ">
+                                    <img src="./img/reg_ben_img_4.jpg" alt="reg_ben_img_4.gif" class="e-img ">
+                                    <p class="tit2">點數查詢</p>
+
+                                    <p>如欲查詢會員點數或使用記錄，可至CAE雲端服務加值中心網站會員專區查詢或於服務時間電話洽詢本中心客服人員（週一～週五9:00-18:00，國定例假日除外)。 </p>
+                                    <p>會員點數累積以單一會員帳號為主，無法與不同會員帳號合併計算、轉讓。累積之會員點數紀錄以CAE雲端服務加值中心網站會員專區之系統資料庫為主要依據。</p>
+                                    <p>會員一年內如未使用模擬操作，將依會員等級扣除管銷點數(「鑽石會員」扣除2,000點，「白金會員」扣除1,200點)，扣除之管銷點數作為CAE雲端服務加值中心各項軟硬體設施修繕維護費用。</p>
+                                    <p>當您的點數少於5,000點(不含，且扣除管銷點數)，則暫停會員預約模擬之權利，系統於會員點數8000點時主動通知會員繳交費用，如未於繳交期限內續會時，所剩餘點數將全數凍結，請特別注意。</p>
+
+                                    <p class="tit2">會員等級變更須知</p>
+
+                                    <p>如欲查詢會員點數或使用記錄，可至CAE雲端服務加值中心網站會員專區查詢或於服務時間電話洽詢本中心客服人員（週一～週五9:00-18:00，國定例假日除外)。 </p>
+                                    <p>會員點數累積以單一會員帳號為主，無法與不同會員帳號合併計算、轉讓。累積之會員點數紀錄以CAE雲端服務加值中心網站會員專區之系統資料庫為主要依據。</p>
+                                    <p>會員一年內如未使用模擬操作，將依會員等級扣除管銷點數(「鑽石會員」扣除2,000點，「白金會員」扣除1,200點)，扣除之管銷點數作為CAE雲端服務加值中心各項軟硬體設施修繕維護費用。</p>
+                                    <p>當您的點數少於5,000點(不含，且扣除管銷點數)，則暫停會員預約模擬之權利，系統於會員點數8000點時主動通知會員繳交費用，如未於繳交期限內續會時，所剩餘點數將全數凍結，請特別注意。</p>
+
+
+
+                                </div>
+
+                                <div id="third-tab" class="tab-content">
+                                    <h3>各項禮遇及創始會員優惠</h3>
+                                    <img src="./img/reg_003.png" alt="reg_003.png" class="e-img ">
+                                    <p class="tit2">入會禮及各項折扣優惠</p>
+                                    <p>好康入會禮：<br> 加入『鑽石會員』，可獲贈酬賓點數20,000點。加入『白金會員』，可獲贈酬賓點數6,000點。 →入會禮應於一年內使用完畢，逾期恕不適用。 →各項會員入會點數以贈送一次為限，退出後再加入者恕不再贈送。
+                                    </p>
+                                    <p class="tit2">尊榮入會禮：</p>
+                                    <p>免費200GB雲端空間，打造您的專屬雲端空間，除了便利、安全更讓您隨時取得模擬分析結果。</p>
+                                    <p class="tit2">《續會禮遇》</p>
+
+                                    <p>續會『鑽石會員』獨享好禮(點數加贈30%，例如續會儲值10,000元，共享有13,000點)。</p>
+                                    <p>續會『白金會員』限定續會禮(點數加贈15%，例如續會儲值10,000元，共享有11,500點)。</p>
+                                    <p class="tit2">《試營運與會員禮遇》</p>
+                                    即日起至107年1月31日止為試營運期，申請入會並繳費成功者(限『鑽石會員』或『白金會員』)，可享有額外優惠，享模擬分析之時數扣點5折優惠。
+                                    <p>應於二年內使用完畢，逾期恕不適用。 您可以選擇「鑽石會員方案」與「白金會員方案」兩種儲值點數方案，其認定標準與點數計算方式請參閱上方資訊。 基本續會儲值金額為10,000元，或10,000元倍數之儲值金額，上限為50,000元(10,000、20,000、30,000...)。 </p>
+                                    <p>加入『鑽石會員』可享訓練課程85折優惠且不限上課人數， 加入『白金會員』可享訓練課程9折優惠且不限上課人數。 </p>
+                                    <p>『尊榮入會禮200GB空間』內之檔案由CAE中心自動免費備份， 並提供七天之備份還原機制。 →不限檔案格式。</p>
+                                    <p class="h-text-deep-pink">CAE雲端服務加值將於符合法令規定前提下，保有隨時修正、暫停、終止本卡之權利，相關資訊以更新後者為準。</p>
+                                </div>
+                                <div id="fourth-tab" class="tab-content">
+                                    <h3>入會申請流程</h3>
+                                    <img src="./img/reg_flow.gif" alt="" srcset="" class="e-img">
+
+
+
+                                    <ul class="accordion">
+                                        <li class="accordion-item is-active">
+                                            <h3 class="accordion-thumb">帳號申請的相關問題</h3>
+                                            <div class="accordion-panel">
+                                                <strong>2.會員資料修改</strong>－ 登入會員後，至「會員中心」－「會員帳號維護」內做修改。 如密碼需要修改請洽CAE服務窗口
+                                            </div>
+                                        </li>
+
+                                        <li class="accordion-item">
+                                            <h3 class="accordion-thumb">如何註冊成為會員?</h3>
+                                            <div class="accordion-panel">
+                                                1.請至首頁，點選上排會員專區－會員註冊
+                                                <img src="./img/booking.jpg" alt="booking.jpg">
+                                            </div>
+                                        </li>
+
+
+                                    </ul>
+
+
+                                    <p>1.當您完成註冊時，系統會立即發送一封「會員加入通知信」至您的電子信箱中。 </p>
+                                    <p>若您使用匯款方式，請於付款收據影本上填妥會員帳號與姓名，並傳真至(07)355-0961 CAE雲端服務加值中心，我們將於確認收款三天內(不含例假日)寄發「 CAE雲端服務加值中心會員點數啟用通知信」，您即可開始使用儲值點數。 </p>
+                                    <p> 若您使用匯票/支票方式，我們將於收到支票後二天內(不含例假日)寄發「 CAE雲端服務加值中心點數啟用通知信」，您即可開始使用儲值點數。 </p>
+                                    <p>若您親自至本中心繳款，我們將於隔日(不含例假日)寄發「 CAE雲端服務加值中心點數啟用通知信」，您即可開始使用儲值點數。 </p>
+                                    <p>本中心收到申請入會資料及費用經審閱無誤後，將寄送「 CAE雲端服務加值中心點數啟用通知信」。</p>
+                                </div>
+                                <div id="fifth-tab" class="tab-content">
+                                    <h3>特別聲明</h3>
+                                    <p>1.依據政府法令規定，CAE雲端服務加值中心有權調整上述條款。</p>
+                                    <p>2.為提供您完善與多元的會員服務，CAE雲端服務加值中心謹依個人資料保護法及本隱私權政策蒐集、 處理及利用您的個人資料， 並承諾尊重以及保護您個人於本中心服務平台的隱私權。 請詳細閱讀本隱私權政策，透過本隱私權政策， 您將瞭解到本中心如何蒐集、處理、利用以及保護您所提供的資訊。
+                                    </p>
+                                    <p>3.本中心保留任何爭議之最終決定權，如有仿冒、偽造、變造點數，或任何違反會員規範之情事者，本中心保有終止該會員資格之權益，並保留法律追訴權。 依據政府法令規定，CAE雲端服務加值中心有權調整上述條款。 </p>
+                                    <p>4.為提供您完善與多元的會員服務，CAE雲端服務加值中心謹依個人資料保護法及本隱私權政策蒐集、處理及利用您的個人資料，並承諾尊重以及保護您個人於本中心服務平台的隱私權。請詳細閱讀本隱私權政策，透過本隱私權政策，您將瞭解到本中心如何蒐集、處理、利用以及保護您所提供的資訊。 </p>
+                                    <p>5.本中心保留任何爭議之最終決定權，如有仿冒、偽造、變造點數，或任何違反會員規範之情事者，本中心保有終止該會員資格之權益，並保留法律追訴權。</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </section>
+
+
+        </article>
+
+
+
+
+        <footer class="l-footer pt-5 pb-1">
+            <div class="container px-md-4 px-lg-2">
+                <div class="row justify-content-between">
+
+                    <div class="col-xl-7 mb-3 mb-xl-0">
+                        <h2 class="mb-1 fon">CAE雲端服務加值中心</h2>
+                        <ul class="l-footer__connection">
+                            <li>地址：高雄市楠梓區朝仁路55號</li>
+                            <li>電話：07-3517161-6253,6250 / 傳真 07-3512981</li>
+                            <li>服務時間：週一至週五 08:30-18:00 週六、日及例假日休息</li>
+                            <li>瀏覽人次：71090</li>
+                            <li>建議使用 Internet Explorer 11 以上版本、最新版本Chrome或Firefox瀏覽器， 並設定 1024ｘ768 以上解析度，以獲得最佳瀏覽體驗</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 mb-3 mb-xl-0 d-flex">
+                        <div class="l-footer__company ">
+                            <h1 class="h-hide-text mb-2">
+                                <a href="#" title="logo" style="background-image: url('./img/cae_foot_qr.png')" class="e-brand l-footer__Qimg"></a>
+                            </h1>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+        <div class="othersBtn">
+            <a href="javascript:;" class="fixedBtn goTop" title="回頂端"><b>Top</b></a>
+            <!-- <a href="javascript:history.back()" class="fixedBtn goBack" title="回上頁"><b>回上頁</b></a> -->
+            <a href="javascript:;" class="closeOpenMenu" title="關閉選單">關閉選單</a>
+        </div>
+
+    </div>
+</body>
+
+<script src="./js/all.js ">
+</script>
+
+
+</html>
