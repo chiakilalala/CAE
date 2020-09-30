@@ -524,6 +524,11 @@ $(".drawer_heading").click(function () {
   $("ul.tabs2 li[rel^='" + t_activeTab + "']").addClass("active_2");
 });
 $(function () {
+  $('.navHead').on('click', function () {
+    $('#navService').toggleClass("open");
+  });
+});
+$(function () {
   var swiper = new Swiper('.carousel-gallery .swiper-container', {
     loop: true,
     effect: 'slide',
