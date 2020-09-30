@@ -6939,9 +6939,9 @@ html {
     color: #9c9c9c; }
   .e-formBox label {
     display: inline-block;
-    margin-right: 7px;
-    font-size: 1.28571rem;
-    color: #444;
+    font-size: 1.07143rem;
+    color: #333;
+    font-weight: 400;
     line-height: 35px; }
   .e-formBox_control {
     float: left;
@@ -6971,9 +6971,8 @@ html {
     margin-right: 10px;
     min-width: 100px;
     max-width: 200px;
-    text-align: right;
-    font-size: 1rem;
-    color: #444;
+    font-size: 1.07143rem;
+    color: #333;
     line-height: 1.8; }
     .e-formBox .left em {
       color: #ff3333;
@@ -7875,7 +7874,7 @@ input[type=checkbox]:checked::after {
 
 .m-member-form {
   border-top: 3px solid #ff5e45;
-  padding: 1.07143rem; }
+  padding: 1rem; }
   .m-member-form__title {
     font-weight: 700;
     text-align: center; }
@@ -9278,9 +9277,6 @@ input#search-bar {
     transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
     position: relative; }
   #navService .desktop-swiper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -9292,10 +9288,41 @@ input#search-bar {
     text-align: center;
     transition: color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); }
   .rotate {
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
     transform: rotate(180deg); } }
+
+@media (max-width: 767px) {
+  #navService.scroll-up {
+    transform: translateY(0);
+    pointer-events: auto; }
+  #navService {
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 -5px 10px 0 rgba(51, 51, 51, 0.15);
+    transition: transform .4s ease;
+    width: 100%;
+    height: 80px;
+    transform: translateY(100%);
+    pointer-events: none; }
+  #navService.scroll-up {
+    transform: translateY(0);
+    pointer-events: auto; }
+  #navService .navInfo {
+    height: 100%; }
+  #navService .swiper-container {
+    padding: 0 45px; }
+  #navService img {
+    width: 48px;
+    height: 48px;
+    margin: auto; }
+  #navService .swiper-slide a {
+    display: block;
+    text-align: center; }
+  #navService .swiper-slide {
+    width: auto;
+    min-width: 20%; }
+  #navService .swiper-container {
+    padding: 0 45px; } }
 
 .l-footer h2 {
   font-size: 2.14286rem; }
@@ -9682,99 +9709,6 @@ section.Nav.NavFixed,
 /*----熱門點閱----*/
 /*↓↓---中間的搜尋---↓↓*/
 /*↓↓---中間的分眾---↓↓*/
-.circle {
-  width: 560px;
-  height: 0;
-  padding-bottom: 560px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -235px;
-  margin-left: -280px;
-  z-index: 1;
-  border: 1px solid #FFF;
-  border-radius: 50%; }
-
-.circle > .dot {
-  width: 50%;
-  height: 0;
-  padding-bottom: 50%;
-  position: absolute; }
-
-.circle > .dot.dotGo {
-  -webkit-animation-name: circleGO;
-  animation-name: circleGO;
-  -webkit-animation-duration: 27s;
-  animation-duration: 27s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transform-origin: right bottom;
-  transform-origin: right bottom; }
-
-.dot:before {
-  content: "";
-  width: 14px;
-  height: 14px;
-  position: absolute;
-  background: #FFF;
-  border-radius: 50%;
-  left: -7px;
-  bottom: -7px; }
-
-.circle .season {
-  width: 100%;
-  height: 0;
-  padding-bottom: 100%;
-  position: relative;
-  border-radius: 50%; }
-
-.circle .season > li {
-  position: absolute;
-  color: #FFF;
-  font-size: 110%;
-  font-weight: bold;
-  height: 30px;
-  width: 56px;
-  text-align: center; }
-
-.circle .season > li:nth-child(1) {
-  top: 50%;
-  left: -57px;
-  margin-top: -15px; }
-
-.circle .season > li:nth-child(2) {
-  top: -30px;
-  left: 50%;
-  margin-left: -28px; }
-
-.circle .season > li:nth-child(3) {
-  top: 50%;
-  right: -57px;
-  margin-top: -15px; }
-
-.circle .season > li:nth-child(4) {
-  bottom: -35px;
-  left: 50%;
-  margin-left: -28px; }
-
-@-webkit-keyframes circleGO {
-  0% {
-    -webkit-transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(360deg); } }
-
-@keyframes circleGO {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
-
 /*節慶banner*/
 /* @-webkit-keyframes tada {
     from {
@@ -9902,15 +9836,6 @@ li.slick-current .image.an2 {
   transition: transform 15s ease-out; }
 
 /*//////////////*/
-/*節慶Banner*/
-#floatBanner_festival {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -275px;
-  margin-top: -225px;
-  z-index: 3; }
-
 /*節慶Banner ↑↑*/
 /*████↓↓--第二塊--↓↓████*/
 .newsSection {
@@ -10342,22 +10267,6 @@ body.withoutJs {
 
 /*彈跳banner*/
 /*-----切換路徑的做法-----*/
-@media screen and (max-width: 780px) {
-  .HTML5Banner {
-    transform: scale(0.45); } }
-
-@media screen and (max-width: 550px) {
-  .HTML5Banner {
-    transform: scale(0.45); } }
-
-@media screen and (max-width: 480px) {
-  .HTML5Banner {
-    transform: scale(0.45); } }
-
-@media screen and (max-width: 320px) {
-  .HTML5Banner {
-    transform: scale(0.4); } }
-
 .snowbanner {
   width: 100%;
   height: 100vh;
