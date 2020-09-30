@@ -9863,19 +9863,6 @@ section.Nav.NavFixed,
     transform: scale(1.2); } }
 
 /*████↑↑強迫第一個一開始就動↑↑████*/
-li .image.an1 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-  -o-transition: transform 5s ease-out;
-  -webkit-transition: transform 5s ease-out;
-  -moz-transition: transform 5s ease-out;
-  transition: transform 5s ease-out;
-  -webkit-transition-delay: 2s;
-  transition-delay: 2s;
-  -o-transition-delay: 2s; }
-
 li.slick-current .image.an1 {
   transform: scale(1.2);
   -webkit-transition: transform 5s ease-out;
@@ -11258,7 +11245,7 @@ a:hover {
 
 .subNavWrap .logo {
   text-indent: -9999px;
-  background: url(../../img/logo_w.png) no-repeat center/cover;
+  background: url(./../img/logo_w.png) no-repeat center/cover;
   width: 23.57143rem;
   height: 3.78571rem;
   float: left;
