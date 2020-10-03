@@ -7109,7 +7109,7 @@ html {
   background-color: #FFE035 !important; }
 
 .h-bg-muted {
-  background-color: #A2D4DD !important; }
+  background-color: #37c5e0 !important; }
 
 .h-bg-light {
   background-color: rgba(255, 255, 255, 0.7) !important; }
@@ -7157,7 +7157,7 @@ html {
   color: #FFE035 !important; }
 
 .h-text-muted {
-  color: #A2D4DD !important; }
+  color: #37c5e0 !important; }
 
 .h-text-light {
   color: rgba(255, 255, 255, 0.7) !important; }
@@ -7266,7 +7266,7 @@ html {
   .e-btn_info {
     background-color: #FFE035; }
   .e-btn_muted {
-    background-color: #A2D4DD; }
+    background-color: #37c5e0; }
   .e-btn_light {
     background-color: rgba(255, 255, 255, 0.7); }
   .e-btn_dark {
@@ -7818,9 +7818,9 @@ html {
   .e-ribbon_info .e-ribbon__label {
     background-color: #FFE035; }
   .e-ribbon_muted::before, .e-ribbon_muted::after {
-    border-color: #7dc3cf; }
+    border-color: #1fabc5; }
   .e-ribbon_muted .e-ribbon__label {
-    background-color: #A2D4DD; }
+    background-color: #37c5e0; }
   .e-ribbon_light::before, .e-ribbon_light::after {
     border-color: rgba(230, 230, 230, 0.7); }
   .e-ribbon_light .e-ribbon__label {
@@ -7867,7 +7867,7 @@ html {
   .e_bandge_info::before, .e_bandge_info::after {
     background-color: #FFE035; }
   .e_bandge_muted::before, .e_bandge_muted::after {
-    background-color: #A2D4DD; }
+    background-color: #37c5e0; }
   .e_bandge_light::before, .e_bandge_light::after {
     background-color: rgba(255, 255, 255, 0.7); }
   .e_bandge_dark::before, .e_bandge_dark::after {
@@ -8082,10 +8082,10 @@ html {
         background-color: #FFE035;
         color: white; }
     .m-card__button_muted {
-      color: #A2D4DD;
-      border-color: #A2D4DD; }
+      color: #37c5e0;
+      border-color: #37c5e0; }
       .m-card__button_muted:hover {
-        background-color: #A2D4DD;
+        background-color: #37c5e0;
         color: white; }
     .m-card__button_light {
       color: rgba(255, 255, 255, 0.7);
@@ -8830,7 +8830,7 @@ table {
   table_info {
     background-color: #FFE035; }
   table_muted {
-    background-color: #A2D4DD; }
+    background-color: #37c5e0; }
   table_light {
     background-color: rgba(255, 255, 255, 0.7); }
   table_dark {
@@ -9784,6 +9784,63 @@ a#closeLogin {
     transform: translate(-50%, -50%);
     width: 40%; }
 
+.listArea {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.87);
+  display: none; }
+  .listArea .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%; }
+
+.payArea {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.87);
+  display: none; }
+  .payArea .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%; }
+
+.btn_Close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #000;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all .5s; }
+  .btn_Close:before {
+    left: 8px;
+    transform: rotate(45deg); }
+  .btn_Close:after {
+    right: 8px;
+    transform: rotate(-45deg); }
+  .btn_Close:before, .btn_Close:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 60%;
+    height: 1px;
+    background: #fff; }
+
 .btnClose {
   position: absolute;
   right: 15px;
@@ -9802,6 +9859,31 @@ a#closeLogin {
     right: 8px;
     transform: rotate(-45deg); }
   .btnClose:before, .btnClose:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 60%;
+    height: 1px;
+    background: #fff; }
+
+.buttonClose {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #000;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all .5s; }
+  .buttonClose:before {
+    left: 8px;
+    transform: rotate(45deg); }
+  .buttonClose:after {
+    right: 8px;
+    transform: rotate(-45deg); }
+  .buttonClose:before, .buttonClose:after {
     content: '';
     position: absolute;
     top: 50%;
@@ -9853,6 +9935,10 @@ input#search-bar {
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-size: 20px; }
+
+.list-content {
+  background: white;
+  padding: 10px  20px; }
 
 #navService {
   position: fixed;
@@ -10313,7 +10399,7 @@ input#search-bar {
   top: 6%;
   cursor: pointer;
   font-size: 1rem;
-  color: #A2D4DD;
+  color: #37c5e0;
   padding: 0.35714rem; }
   @media (max-width: 576px) {
     .plus {
@@ -10371,6 +10457,38 @@ section.Nav.NavFixed,
 
 .topNav {
   box-shadow: none; }
+  .topNav_ad_color {
+    background-color: #1FB5B5; }
+  .topNav_deep-pink {
+    background-color: #e1306c; }
+  .topNav_title_color {
+    background-color: #9AD6DF; }
+  .topNav_btn-color {
+    background-color: #2E7BD3; }
+  .topNav_tab_color {
+    background-color: #235EAF; }
+  .topNav_third-color {
+    background-color: #3784ed; }
+  .topNav_primary {
+    background-color: #115FA3; }
+  .topNav_secondary {
+    background-color: #5495C2; }
+  .topNav_success {
+    background-color: #ff5e45; }
+  .topNav_danger {
+    background-color: #be0027; }
+  .topNav_info {
+    background-color: #FFE035; }
+  .topNav_muted {
+    background-color: #37c5e0; }
+  .topNav_light {
+    background-color: rgba(255, 255, 255, 0.7); }
+  .topNav_dark {
+    background-color: #333; }
+  .topNav_white {
+    background-color: white; }
+  .topNav_black {
+    background-color: black; }
 
 .rightNavWrap {
   top: 215px; }
@@ -10805,7 +10923,7 @@ li.oneNews:first-child {
   padding: 13px 30px;
   border-radius: 1.07143rem; }
   .newsBox > span a:hover {
-    background-color: #57b1c2;
+    background-color: #188599;
     color: white; }
   .newsBox > span a.color_ad_color {
     color: white;
@@ -10875,9 +10993,9 @@ li.oneNews:first-child {
       color: white; }
   .newsBox > span a.color_muted {
     color: white;
-    background-color: #A2D4DD; }
+    background-color: #37c5e0; }
     .newsBox > span a.color_muted:hover {
-      background-color: #57b1c2;
+      background-color: #188599;
       color: white; }
   .newsBox > span a.color_light {
     color: white;
@@ -11398,7 +11516,7 @@ ul.tabs2 li.active_2 {
   .e_news_info {
     background-color: #FFE035; }
   .e_news_muted {
-    background-color: #A2D4DD; }
+    background-color: #37c5e0; }
   .e_news_light {
     background-color: rgba(255, 255, 255, 0.7); }
   .e_news_dark {
@@ -11438,7 +11556,7 @@ ul.tabs2 li.active_2 {
   .items_news_info {
     border-color: #FFE035; }
   .items_news_muted {
-    border-color: #A2D4DD; }
+    border-color: #37c5e0; }
   .items_news_light {
     border-color: rgba(255, 255, 255, 0.7); }
   .items_news_dark {
@@ -11490,7 +11608,7 @@ ul.tabs2 li.active_2 {
     .items_news .oneNews .newsDate_info {
       background-color: #FFE035; }
     .items_news .oneNews .newsDate_muted {
-      background-color: #A2D4DD; }
+      background-color: #37c5e0; }
     .items_news .oneNews .newsDate_light {
       background-color: rgba(255, 255, 255, 0.7); }
     .items_news .oneNews .newsDate_dark {
@@ -12049,7 +12167,6 @@ a:hover {
 /*----blue色的----*/
 .topNav {
   height: 62px;
-  background: #115FA3;
   box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.18) inset;
   padding: 0 11%; }
 

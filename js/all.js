@@ -402,6 +402,20 @@ $('.btnSearch').click(function () {
 $('.searchArea').find('.btnClose').click(function () {
   $('.searchArea').fadeOut();
 });
+/* Proc.html */
+
+$('.openSoftModule').click(function () {
+  $('.listArea').fadeIn();
+});
+$('.inner').find('.buttonClose').click(function () {
+  $('.listArea').fadeOut();
+});
+$('.openPayModule').click(function () {
+  $('.payArea').fadeIn();
+});
+$('.inner').find('.btn_Close').click(function () {
+  $('.payArea').fadeOut();
+});
 /*首頁登入 */
 
 $(function () {
@@ -460,6 +474,18 @@ $(".tab_drawer_heading").click(function () {
   $(this).addClass("d_active");
   $("ul.tabs li").removeClass("active");
   $("ul.tabs li[rel^='" + d_activeTab + "']").addClass("active");
+});
+var colorButton = $(".colors li");
+colorButton.on("click", function () {
+  // Remove class from currently active button
+  $(".colors > li").removeClass("active-color"); // Add class active to clicked button
+
+  $(this).addClass("active-color"); // Get background color of clicked
+
+  var newColor = $(this).attr("data-color"); // Change background of everything with class .bg-color
+
+  $(".bg-color").css("background-color", newColor); // // Change color of everything with class .text-color
+  // $(".text-color").css("color", newColor);
 });
 /* Extra class "tab_last" 
    to add border to right side

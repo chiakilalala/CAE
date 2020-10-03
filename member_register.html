@@ -134,8 +134,7 @@
                                 <a target="_self " href="about2.html"> 聯絡方式</a>
                             </li>
                             <li class="Level2 ">
-                                <a target="_self " href="Description.html">
-                                    服務項目介紹</a>
+                                  <a target="_self " href="Description.html"> 服務項目介紹</a>
                            </li>
                         </ul>
                     </li>
@@ -175,7 +174,7 @@
                                 <a href="soft.html "> 軟體簡介</a>                                                        </a>
                             </li>
                             <li class="Level2 ">
-                                <a href="soft_login.html "> 預約 </a>                                                               
+                                <a href="soft_proc.html "> 預約 </a>                                                               
                             </li>
                             <li class="Level2 ">
                                 <a href="soft_login.html"> 模擬執行</a>                                                          
@@ -191,7 +190,7 @@
                                 <a target=" _self " href="#"> 試作服務 </a>
                             </li>
                             <li class="Level2 ">
-                                <a target="_self " href="#">專案服務</a>          
+                                <a target="_self " href="projectService.html"> 專案服務 </a>            
                             </li>
                             <li class="Level2 ">
                                 <a target=" _self " href="faq.html"> 常見問題 </a>
@@ -287,34 +286,45 @@
                                         </div>
                                     </div>
                                     <div class="g-tv-6 form clearfix">
-                                        <b>※登入帳號及密碼補發信箱無法修改，請正確填寫</b>
-                                    </div>
-                                    <br style="clear:both;">
-
-                                    <div class="g-tv-6 form clearfix">
                                         <div class="left"><em>※</em>設定密碼</div>
                                         <div class="right">
                                             <input name="data_login_pwd" type="password" value="" class="require" data-note="密碼" placeholder="請填寫6個以上英文與數字組合">
                                         </div>
                                     </div>
-                                    <div class="g-tv-6 form clearfix">
-                                        <b>※6個以上半形字元，僅接受英文字母與數字</b>
-                                    </div>
                                     <br style="clear:both;">
 
-                                    <div class="g-tv-6 form clearfix">
-                                        <div class="left"><em>※</em>確認密碼</div>
+                                    <!-- <div class="g-tv-6 form clearfix">
+                                        <div class="left"><em>※</em>設定密碼</div>
                                         <div class="right">
-                                            <input type="password" value="" class="require" data-note="確認密碼">
+                                            <input name="data_login_pwd" type="password" value="" class="require" data-note="密碼" placeholder="請填寫6個以上英文與數字組合">
+                                         <b>※6個以上半形字元，僅接受英文字母與數字</b>
+                                        </div>
+                                    </div> -->
+                                    <!-- <div class="g-tv-6 form clearfix">
+                                        <b>※6個以上半形字元，僅接受英文字母與數字</b>
+                                    </div> -->
+                                   
+                                    
+
+                                    <div class="g-tv-6 form clearfix">
+                                        <div class="left">學校名稱</div>
+                                        <div class="right">
+                                            <input type="text" value="" class="require" placeholder="現職機構">
                                         </div>
                                     </div>
-                                    <br style="clear:both;">
+                                  
 
                                     <div class="g-tv-6 form clearfix">
-                                        <div class="left"><em>※</em>申 請 人</div>
-                                        <div class="right"><input type="text" class="require" data-note="姓名"></div>
+                                        <div class="left">就讀系所</div>
+                                        <div class="right"><input type="text" class="require" placeholder="現職機構"></div>
                                     </div>
                                     <br style="clear:both;">
+                                      <div class="g-tv-6 form clearfix">
+                                        <div class="left">申請人</div>
+                                        <div class="right">
+                                            <input type="text" value="" class="require" placeholder="現職機構">
+                                        </div>
+                                    </div>
 
                                     <div class="g-tv-6 form clearfix">
                                         <div class="left"><em>※</em>行動電話</div>
@@ -327,9 +337,19 @@
                                         <!--form-->
                                         <div class="left tv_show">就讀</div>
                                         <div class="right">
-                                            <label><input name="" type="radio" value="0" >大學</label>
-                                            <label><input name="" type="radio" value="1">碩士</label>
-                                            <label><input name="" type="radio" value="2">博士</label>
+                                            <label><input name="school" type="radio" value="0" >大學</label>
+                                            <label><input name="school" type="radio" value="1">碩士</label>
+                                            <label><input name="school" type="radio" value="2">博士</label>
+                                        </div>
+                                    </div>
+
+                                       <br style="clear:both;">
+                                    <div class="g-tv-12 form clearfix">
+                                        <div class="left"><em>※</em>聯絡地址</div>
+                                        <div class="right">
+                                          
+                                            <span id="container"><select name="data_city" style="margin-right: 4px;"><option value="">縣市</option><option value="基隆市">基隆市</option><option value="台北市">台北市</option><option value="新北市">新北市</option><option value="宜蘭縣">宜蘭縣</option><option value="新竹市">新竹市</option><option value="新竹縣">新竹縣</option><option value="桃園市">桃園市</option><option value="苗栗縣">苗栗縣</option><option value="台中市">台中市</option><option value="彰化縣">彰化縣</option><option value="南投縣">南投縣</option><option value="嘉義市">嘉義市</option><option value="嘉義縣">嘉義縣</option><option value="雲林縣">雲林縣</option><option value="台南市">台南市</option><option value="高雄市">高雄市</option><option value="屏東縣">屏東縣</option><option value="台東縣">台東縣</option><option value="花蓮縣">花蓮縣</option><option value="金門縣">金門縣</option><option value="連江縣">連江縣</option><option value="澎湖縣">澎湖縣</option></select><select name="data_town" style="margin-right: 4px;"><option value="">鄉鎮市區</option></select><input type="text" name="data_zip" placeholder="郵遞區號" style="width: 100px;"></span>
+                                            <input type="text" id="data_address" name="data_address" value="" class="require" data-note="聯絡地址">
                                         </div>
                                     </div>
                                     <br style="clear:both;">
@@ -340,7 +360,7 @@
                                         </div>
                                     </div>
 
-                                    <br style="clear:both;">
+                                  
                                     <div class="g-tv-6 form clearfix">
                                         <div class="left"><em>※</em>E-mail</div>
                                         <div class="right">
@@ -348,40 +368,8 @@
                                         </div>
                                     </div>
                                     <!--form end-->
-                                    <br style="clear:both;">
-                                    <div class="g-tv-12 form clearfix">
-                                        <div class="left"><em>※</em>聯絡地址</div>
-                                        <div class="right">
-                                            <label>
-                                                <input name="data_area" type="radio" value="0" checked="" > 台灣
-                                            </label>
-                                            <label>
-                                                <input name="data_area" type="radio" value="1" > 外國
-                                            </label>
-                                            <span id="container"><select name="data_city" style="margin-right: 4px;"><option value="">縣市</option><option value="基隆市">基隆市</option><option value="台北市">台北市</option><option value="新北市">新北市</option><option value="宜蘭縣">宜蘭縣</option><option value="新竹市">新竹市</option><option value="新竹縣">新竹縣</option><option value="桃園市">桃園市</option><option value="苗栗縣">苗栗縣</option><option value="台中市">台中市</option><option value="彰化縣">彰化縣</option><option value="南投縣">南投縣</option><option value="嘉義市">嘉義市</option><option value="嘉義縣">嘉義縣</option><option value="雲林縣">雲林縣</option><option value="台南市">台南市</option><option value="高雄市">高雄市</option><option value="屏東縣">屏東縣</option><option value="台東縣">台東縣</option><option value="花蓮縣">花蓮縣</option><option value="金門縣">金門縣</option><option value="連江縣">連江縣</option><option value="澎湖縣">澎湖縣</option></select><select name="data_town" style="margin-right: 4px;"><option value="">鄉鎮市區</option></select><input type="text" name="data_zip" placeholder="郵遞區號" style="width: 100px;"></span>
-                                            <input type="text" id="data_address" name="data_address" value="" class="require" data-note="聯絡地址">
-                                        </div>
-                                    </div>
-                                    <!-- 
-                                        <div class="g-tv-6 form clearfix">
-                                            <b>※請輸入正確行動電話，下一步驟將進行手機簡訊驗證</b>
-                                        </div> -->
-                                    <br style="clear:both;">
-
-                                    <div class="g-tv-6 form clearfix">
-                                        <div class="left">聯絡電話</div>
-                                        <div class="right">
-                                            <input type="text" name="data_tel" data-note="聯絡電話" placeholder="範例: 02-1234567 (市話)">
-                                        </div>
-                                    </div>
-                                    <br style="clear:both;">
-
-                                    <div class="g-tv-6 form clearfix">
-                                        <div class="left"><em>※</em>身分證號</div>
-                                        <div class="right">
-                                            <input type="text" id="data_birthday" name="data_birthday" class=" require " data-note="生日" readonly="">
-                                        </div>
-                                    </div>
+                                 
+                
                                     <br style="clear:both;">
                                     <div class="g-tv-6 form clearfix">
                                         <div class="left">聯絡電話
@@ -393,6 +381,16 @@
                                             <input type="text" name="data_zip" placeholder="" style="width: 100px;">(H)
 
                                             <input type="text" class=" require " readonly="">
+                                        </div>
+                                    </div>
+                                  
+                            
+                                    <br style="clear:both;">
+                                   <div class="g-tv-6 form clearfix">
+
+                                        <div class="left">傳真電話</div>
+                                        <div class="right">
+                                            <input type="text" name="data_tel" data-note="傳真電話" placeholder="範例: 02-1234567 (市話)">
                                         </div>
                                     </div>
 
