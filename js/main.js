@@ -349,16 +349,16 @@ $(function () {
 
   /*if(!($(".topNav>li>ul>li>ul").html()==undefined))
   {
-  	$(".topNav>li>ul>li>ul").mCustomScrollbar({
-  		theme: "dark-3",
-  		scrollButtons: {
-  			enable: true
-  		}
-  	}); 
+    $(".topNav>li>ul>li>ul").mCustomScrollbar({
+      theme: "dark-3",
+      scrollButtons: {
+        enable: true
+      }
+    }); 
   }
   if(!($(".linkOutPage .box span").html()==undefined))
   {
-  	$(".linkOutPage .box span").mCustomScrollbar(); 
+    $(".linkOutPage .box span").mCustomScrollbar(); 
   }*/
   //fatfooter
   // $('.sitemapAll').before('<a href="#" name="close-Panel1" id="close-Panel1" class="trigger"><i></i></a>');
@@ -462,7 +462,7 @@ $(".tab_drawer_heading").click(function () {
   $("ul.tabs li[rel^='" + d_activeTab + "']").addClass("active");
 });
 /* Extra class "tab_last" 
-   to add border to right side
+ to add border to right side
 //    of last tab */
 // $('ul.tabs li').last().addClass("tab_last");
 
@@ -577,4 +577,4 @@ $(function () {
     });
   });
 })(window.jQuery);
-//# sourceMappingURL=all.js.map
+//# sourceMappingURL=main.js.map

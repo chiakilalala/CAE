@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>會員中心</title>
     <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
     <link rel="stylesheet" href="./css/all.css">
     <script src="./js/jquery.3.31.js">
     </script>
 
-    <script src="./js/jquery.ui.js "></script>
+       <script src="./js/jquery.ui.js"></script>
     <script src="./js/jquery.mCustomScrollbar.concat.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+   <script src="./js/swiper-min.js"></script>
 </head>
 
 <body>
@@ -345,22 +344,17 @@
         <section class=" bannerPic " style="background-image: url(https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80); background-size: cover; background-position: center center; background-repeat: no-repeat;">
 
             <div class="container">
-                <div class="col-md-12">
-
-
+                <div class="col-md-12 h-text-center">
                     <h1> 會員中心</h1>
-
-
                 </div>
             </div>
         </section>
         <article>
 
             <section class="main-content">
+             <div class="container px-md-4">
                 <div class="row">
-
-
-                    <div class="col-md-3 ">
+                    <div class="col-md-12 col-xl-3 ">
                         <div class="container px-3">
                             <ul class="e-breadcrumb">
                                 <li>首頁</li>
@@ -369,12 +363,12 @@
 
                             </ul>
                             <nav class="m-search-menu">
-                                <ul class="m-search-menu__list">
-                                    <li><a class="m-search-menu__link ">繳費紀錄</a></li>
-                                    <li><a class="m-search-menu__link ">點數使用紀錄</a></li>
+                                  <ul class="m-search-menu__list">
+                                      <li><a class="m-search-menu__link "href="member_center.html">繳費紀錄</a></li>
+                                    <li><a class="m-search-menu__link " href="member_point.html">點數使用紀錄</a></li>
                                     <li><a class="m-search-menu__link">預約紀錄</a></li>
 
-                                    <li><a class="m-search-menu__link is-active"> 帳號維護</a></li>
+                                    <li><a class="m-search-menu__link is-active" href="member_maintain.html"> 帳號維護</a></li>
                                     <li><a class="m-search-menu__link"> 檔案下載</a></li>
                                 </ul>
                             </nav>
@@ -382,9 +376,9 @@
 
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-12 col-xl-8">
 
-                        <div class=" m-content px-sm-3">
+                        <div class=" m-content ">
 
                             <h3 class="articleTitle">帳號維護</h3>
 
@@ -401,7 +395,7 @@
                                         </div>
                                         <div class="right">
                                             鑽石
-                                            <span></span>
+                                          
 
                                         </div>
                                     </div>
@@ -410,8 +404,6 @@
                                         </div>
                                         <div class="right">
                                             2020/05/06 15:35
-                                            <span></span>
-
                                         </div>
                                     </div>
 
@@ -475,102 +467,91 @@
                                         <div class="left"><em>※</em>公司電話</div>
                                         <div class="right"><input type="text" class="require" data-note="姓名" value="0937633936"></div>
                                     </div>
-                                    <br style="clear:both;">
+                                  
 
                                     <div class="g-tv-6 form clearfix">
-                                        <div class="left"><em>※</em>行動電話</div>
+                                        <div class="left"><em>※</em>網址</div>
                                         <div class="right">
                                             <input type="text" id="data_mtel" name="data_mtel" class="require" placeholder="範例: 0933123456">
                                         </div>
                                     </div>
                                     <br style="clear:both;">
-                                    <div class="g-tv-6 form clearfix">
-                                        <!--form-->
-                                        <div class="left tv_show">就讀</div>
+                                  <div class="g-tv-6 form clearfix">
+                                        <div class="left"><em>※</em>聯絡人</div>
                                         <div class="right">
-                                            <label><input name="data_sex" type="radio" value="0" >大學</label>
-                                            <label><input name="data_sex" type="radio" value="1">碩士</label>
-                                            <label><input name="data_sex" type="radio" value="2">博士</label>
+                                            <input type="text" id="data_mtel" name="data_mtel" class="require" placeholder="範例: 0933123456">
                                         </div>
                                     </div>
-                                    <br style="clear:both;">
+                                  
                                     <div class="g-tv-6 form clearfix">
-                                        <div class="left"><em>※</em>身份證字號</div>
+                                        <div class="left">聯絡人職稱</div>
+
                                         <div class="right">
-                                            <input type="text" class="require" placeholder="範例: F1111111">
+                                            <input type="text" class="require" placeholder="聯絡人職稱">
+
                                         </div>
                                     </div>
 
                                     <br style="clear:both;">
                                     <div class="g-tv-6 form clearfix">
-                                        <div class="left"><em>※</em>E-mail</div>
+                                        <div class="left"><em>※</em>員工數</div>
+
                                         <div class="right">
                                             <input type="text" class="require" placeholder="123@gmail.com">
                                         </div>
                                     </div>
-                                    <!--form end-->
-                                    <br style="clear:both;">
-
-
-                                    <div class="g-tv-12 form clearfix">
-                                        <div class="left"><em>※</em>聯絡地址</div>
+                                   
+                                         <div class="g-tv-6 form clearfix">
+                                        <div class="left">分機</div>
                                         <div class="right">
-
-
-                                            <label>
-                                                        <input name="data_area" type="radio" value="0" checked="" > 台灣
-                                                    </label>
-                                            <label>
-                                                        <input name="data_area" type="radio" value="1" > 外國
-                                                    </label>
-                                            <span id="container"><select name="data_city" style="margin-right: 4px;"><option value="">縣市</option><option value="基隆市">基隆市</option><option value="台北市">台北市</option><option value="新北市">新北市</option><option value="宜蘭縣">宜蘭縣</option><option value="新竹市">新竹市</option><option value="新竹縣">新竹縣</option><option value="桃園市">桃園市</option><option value="苗栗縣">苗栗縣</option><option value="台中市">台中市</option><option value="彰化縣">彰化縣</option><option value="南投縣">南投縣</option><option value="嘉義市">嘉義市</option><option value="嘉義縣">嘉義縣</option><option value="雲林縣">雲林縣</option><option value="台南市">台南市</option><option value="高雄市">高雄市</option><option value="屏東縣">屏東縣</option><option value="台東縣">台東縣</option><option value="花蓮縣">花蓮縣</option><option value="金門縣">金門縣</option><option value="連江縣">連江縣</option><option value="澎湖縣">澎湖縣</option></select><select name="data_town" style="margin-right: 4px;"><option value="">鄉鎮市區</option></select><input type="text" name="data_zip" placeholder="郵遞區號" style="width: 100px;"></span>
-                                            <input type="text" id="data_address" name="data_address" value="" class="require" data-note="聯絡地址">
+                                            <input type="text" name="data_tel" data-note="分機" placeholder="">
                                         </div>
                                     </div>
                                     <br style="clear:both;">
-
-
                                     <!-- 
                                                 <div class="g-tv-6 form clearfix">
                                                     <b>※請輸入正確行動電話，下一步驟將進行手機簡訊驗證</b>
                                                 </div> -->
-                                    <br style="clear:both;">
+                                   
 
                                     <div class="g-tv-6 form clearfix">
-                                        <div class="left">聯絡電話</div>
+                                        <div class="left"><em>※</em>聯絡人行動電話</div>
                                         <div class="right">
                                             <input type="text" name="data_tel" data-note="聯絡電話" placeholder="範例: 02-1234567 (市話)">
                                         </div>
                                     </div>
-                                    <br style="clear:both;">
+                                     <div class="g-tv-6 form clearfix">
+                                        <div class="left"><em>※</em>聯絡人E-mail</div>
 
-                                    <div class="g-tv-6 form clearfix">
-                                        <div class="left"><em>※</em>身分證號</div>
                                         <div class="right">
-                                            <input type="text" id="data_birthday" name="data_birthday" class=" require " data-note="生日" readonly="">
+                                            <input type="text" name="data_tel" data-note="聯絡人E-mail" placeholder="範例:123@gmail">
                                         </div>
                                     </div>
                                     <br style="clear:both;">
-                                    <div class="g-tv-6 form clearfix">
-                                        <div class="left">聯絡電話
-                                        </div>
-                                        <div class="right d-flex">
 
-                                            <input type="text" class=" require " readonly="">
-                                            <span class="h-t4 pr-2 d-inline-flex" style="width: 100px;">分機: </span>
-                                            <input type="text" name="data_zip" placeholder="" style="width: 100px;">(H)
-
-                                            <input type="text" class=" require " readonly="">
+                                    <div class="g-tv-12 form clearfix">
+                                        <div class="left"><em>※</em>公司屬性</div>
+                                       <div class="right">
+                                            <label><input name="company" type="radio" value="" >公司、行號</label>
+                                            <label><input name="company" type="radio" value="">政府機構</label>
+                                            <label><input name="company" type="radio" value="">學校</label>
+                                          <label><input name="company" type="radio" value="">公/協會</label>
+                                           <label><input name="company" type="radio" value="">研究機構</label>
                                         </div>
                                     </div>
-
                                     <br style="clear:both;">
-                                    <div class="g-tv-6 form clearfix">
-                                        <div class="left">研究領域或主題</div>
-                                        <div class="right">
-                                            <textarea type="text" row="9"></textarea>
+                          
+                                    <div class="g-tv-12 form clearfix">
+                                        <div class="left"><em>※</em> 產業類別</div>
+                                       <div class="right">
+                                            <label><input name="product" type="radio" value="" >金屬基本業(鐵,非鐵)</label>
+                                            <label><input name="product" type="radio" value="">金屬製品製造業</label>
+                                            <label><input name="product" type="radio" value="">其他</label>
+                                        
                                         </div>
                                     </div>
+
+                                  
                                     <br style="clear:both;">
                                     <div class="g-tv-6 form clearfix">
                                         <div class="left"><em>※</em>CAE軟體需求 <br>(可複選)
@@ -584,23 +565,53 @@
                                             <label><input name="data_sex" type="checkbox" value="2">模具</label>
                                         </div>
                                     </div>
-
-
-                                    <br style="clear:both;">
-
-                                    <div class="g-tv-6 form clearfix parentItem">
+                                     <br style="clear:both;">
+                                    <div class="g-tv-6 form clearfix">
+                                        <div class="left"><em>※</em> 人才培訓需求</div>
+                                       <div class="right">
+                                            <label><input name="product" type="radio" value="" >是</label>
+                                            <label><input name="product" type="radio" value="">否</label>
+                                        </div>
+                                    </div>
+                                        <div class="g-tv-6 form clearfix parentItem">
                                         <div class="left"><em>※</em>訂閱電子報</div>
                                         <div class="right">
                                             <label>
-                                                        <input name="data_area" type="radio" value="0" checked="" > 是
-                                                    </label>
+                                            <input name="data_area" type="radio" value="0" checked="" > 是
+                                           </label>
                                             <label>
-                                                        <input name="data_area" type="radio" value="1" > 否
-                                                    </label>
+                                            <input name="data_area" type="radio" value="1" > 否
+                                             </label>
                                         </div>
                                     </div>
                                     <br style="clear:both;">
+                                    <div class="g-tv-12 form clearfix">
+                                        <div class="left">公司簡介</div>
 
+                                        <div class="right">
+                                            <textarea type="text" row="9"></textarea>
+                                        </div>
+                                    </div>
+                                    <br style="clear:both;">
+                                          <div class="g-tv-12 form clearfix">
+                                        <div class="left">業務項目</div>
+
+                                        <div class="right">
+                                            <textarea type="text" row="9"></textarea>
+                                        </div>
+                                    </div>
+                                    <br style="clear:both;">
+                                    <div class="g-tv-6 form clearfix parentItem">
+                                        <div class="left">上傳公司LOGO</div>
+                                        
+                                          <div class="right">  
+                                          <div class="file e-btn e-btn_primary ">選擇檔案
+                                            <input name="data_area" type="file"class=""  > 
+                                            </div>
+                                            <div class="h-text-danger"> 圖檔規格建議： 138px* 99px</div>
+                                             </div>
+                                        </div>
+                                    </div>
                                     <div class="form clearfix checkArea">
                                         <!--checkArea-->
 
@@ -609,31 +620,20 @@
                                             <a class="e-btn e-btn_secondary">確認送出</a>
                                         </div>
                                     </div>
+
                                     <!--checkArea end-->
 
                                 </div>
 
                             </div>
-
-
-
-
-
                         </div>
 
 
                     </div>
                 </div>
-
-
+            </div>
             </section>
-
-
         </article>
-
-
-
-
         <footer class="l-footer pt-5 pb-1">
             <div class="container px-md-4 px-lg-2">
                 <div class="row justify-content-between">
@@ -664,7 +664,7 @@
         <div class="othersBtn">
             <a href="javascript:;" class="fixedBtn goTop" title="回頂端"><b>Top</b></a>
             <!-- <a href="javascript:history.back()" class="fixedBtn goBack" title="回上頁"><b>回上頁</b></a> -->
-            <a href="javascript:;" class="closeOpenMenu" title="關閉選單">關閉選單</a>
+            <!-- <a href="javascript:;" class="closeOpenMenu" title="關閉選單">關閉選單</a> -->
         </div>
 
     </div>
