@@ -42,20 +42,33 @@
 
         </div>
         <!--loginArea-->
-        <div class="loginArea moduleBox" id="moduleMember">
+         <div class="loginArea moduleBox" id="moduleMember">
             <div class="box">
                 <!--box-->
                 <a id="closeLogin" class="moduleClose"><i class="fas fa-times"></i></a>
                 <div class="login">
                     <!--login-->
-                    <h4>會員登入</h4>
-                    <input type="hidden" id="course">
-                    <input name="login_account" type="text" class="b-box" id="login_account" placeholder="帳號">
-                    <input name="login_pwd" type="password" class="b-box" id="login_pwd" placeholder="密碼">
-                    <div class="btn">
-                        <a class="btn_color1 login_btn_status" style="cursor:pointer" onclick="login_btn();">登入</a><i class="fa fa-spinner fa-spin login_loading_status"></i>
+                    <h4 class="m-member-form__title h-t4">會員登入</h4>
+
+                    <label class="m-member-form__label" for="帳號">*帳號</label>
+                    <div class="e-form-square mb-1">
+                        <i class="e-form-square__icon far fa-user"></i>
+                        <input class="e-form-square__input" type="email" id="email" name="email">
                     </div>
-                    <div class="btns">
+                    <label class="m-member-form__label" for="密碼">*密碼</label>
+                    <div class="e-form-square mb-1"><i class="e-form-square__icon fas fa-lock"></i>
+                        <input class="e-form-square__input" type="password" id="password" name="password">
+                    </div>
+                    <label class="m-member-form__label" for="驗證碼">*驗證碼</label>
+                    <div class="e-form-square__vertify mb-1 m-member-form__buttons">
+
+                        <input class="e-form-square__input" type="text">
+                        <img src="./img/vertify.png" alt="" class="e-img">
+                    </div>
+                    <div class="btn">
+                        <a class="login_btn_status" style="cursor:pointer" onclick="login_btn();">登入</a><i class="fa fa-spinner fa-spin login_loading_status" style="display:none"></i>
+                    </div>
+                    <div class="btns ">
                         <a class="btn_forget">忘記密碼</a>
                     </div>
                     <div class="btns">
@@ -69,14 +82,25 @@
 
                 <div class="forgetCheck">
                     <!--forgetCheck-->
-                    <h4>查詢密碼</h4>
-                    <input name="email_chk" type="text" class="b-box" id="email_chk" placeholder="e-mail">
+                    <h4 class="m-member-form__title h-t4">查詢密碼</h4>
+                    <p class="my-2">請輸入您申請會員時填寫的資料， 核對無誤後，系統會將您的密碼寄至您的聯絡信箱：
+                    </p>
+                    <label class="m-member-form__label" for="帳號">* 註冊帳號</label>
+                    <div class="e-form-square mb-1">
+                        <i class="e-form-square__icon far fa-user"></i>
+                        <input class="e-form-square__input" type="email" id="email_check" name="email">
+                    </div>
+                    <label class="m-member-form__label" for="密碼">*註冊密碼</label>
+                    <div class="e-form-square mb-1"><i class="e-form-square__icon fas fa-lock"></i>
+                        <input class="e-form-square__input" type="password" id="password_check" name="password">
+                    </div>
                     <div class="btn">
-                        <a class="btn_color1 forget_btn_status" style="cursor:pointer">查詢</a><i class="fa fa-spinner fa-spin forget_loading_status" style="display:none"></i>
+                        <a class="btn_color1 forget_btn_status">查詢</a>
                     </div>
-                    <div class="btns">
-                        <a class="btn_relog">重新登入</a>
+                    <div class="btns my-2">
+                        <a class="btn_relog ">重新登入</a>
                     </div>
+                    <p class="h-m1"><i class=" fa fa-circle-notch"></i> 如為企業用戶，註冊email為貴公司聯絡窗口email </p>
                 </div>
                 <!--forgetCheck end-->
             </div>
