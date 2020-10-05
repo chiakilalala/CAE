@@ -602,5 +602,15 @@ $(function () {
       return false;
     });
   });
-})(window.jQuery);
+})(window.jQuery); // mCustomScrollbar
+
+
+(function ($) {
+  $(window).on("load", function () {
+    //   $(".content").mCustomScrollbar();
+    $(".wrapper").mCustomScrollbar({
+      theme: "rounded"
+    });
+  });
+})(jQuery);
 //# sourceMappingURL=all.js.map
