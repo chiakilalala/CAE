@@ -7257,6 +7257,9 @@ html {
   font-size: 1.14286rem;
   text-align: center;
   cursor: pointer; }
+  @media screen and (max-width: 480px) {
+    .e-btn {
+      padding: 0.35714rem 0.71429rem; } }
   .e-btn:hover, .e-btn:focus {
     box-shadow: 0.07143rem 0.85714rem 1rem rgba(0, 0, 0, 0.4);
     background-color: #235EAF;
@@ -9969,6 +9972,8 @@ input#search-bar {
   font-size: 1rem;
   border-bottom: 1px solid #D0CFCE;
   outline: none; }
+  input#search-bar::placeholder {
+    color: white; }
   input#search-bar:focus {
     border: 1px solid #008ABF;
     transition: 0.35s ease;
