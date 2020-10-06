@@ -13211,7 +13211,7 @@ footer .otherLink a:focus > img {
   .fontSize {
     margin-top: 0; }
   .subNavWrap .logo {
-    background: url(../../img/logo_w.png) no-repeat center/contain;
+    background: url(./../img/logo_w.png) no-repeat center/contain;
     width: 180px;
     margin-top: 10px;
     margin-left: 13px; }
@@ -13228,50 +13228,6 @@ footer .otherLink a:focus > img {
   .newsBox p,
   .newsBox p.newsheadline {
     height: 0; }
-  .subNavOther .search {
-    margin-right: 9px; }
-  .subNavOther .search > a {
-    width: 38px;
-    height: 38px;
-    margin-top: 16px;
-    transition: initial; }
-  .subNavOther .lan > a {
-    width: 38px;
-    height: 38px;
-    margin-top: 16px; }
-  /*ç¬¬ä¸‰å±¤é¸å–® æ¨™é¡Œä¸‹æ‹‰*/
-  .mobileSecondBtn i {
-    width: 84%;
-    margin-left: -42%;
-    font-size: 107%; }
-  .leftBtns {
-    padding: 0 18px 1px 18px; }
-  .mobileSecondBtn > ul li {
-    display: inline-block;
-    width: 100%;
-    margin: 11px 0; }
-  .mobileSecondBtn > ul li.mobileThirdBtn a.focus {
-    padding: 0 36px; }
-  .leftBtns .mobileSecondBtn > a.focus {
-    max-width: 282px;
-    line-height: 1.3em; }
-  .leftBtns .mobileSecondBtn > a.focus:before {
-    width: 60px;
-    left: -40px; }
-  .leftBtns .mobileSecondBtn > a.focus:after {
-    width: 60px;
-    right: -40px; }
-  .mobileSecondBtn > ul li.mobileThirdBtn {
-    height: 66px !important; }
-  .mobileSecondBtn ul.focus {
-    padding-top: 0;
-    width: 84%; }
-  .mobileSecondBtn ul.focus li {
-    display: none; }
-  .mobileSecondBtn > ul {
-    font-size: 100%; }
-  .mobileSecondBtn > ul li.mobileThirdBtn a.focus:after {
-    right: 14px; }
   /*æ¨™é¡Œ*/
   header h1 {
     font-size: 153%;
@@ -13309,7 +13265,7 @@ footer .otherLink a:focus > img {
     height: 50px; }
   .goTop {
     bottom: 142px;
-    background: #f99620 url(../../img/goTop.svg) no-repeat center 15px/38%; }
+    background: #f99620 url(./../img/goTop.svg) no-repeat center 15px/38%; }
   .goBack {
     bottom: 81px;
     background: #f99620 url(../../images/icon/goBack.svg) no-repeat center 13px/49%; }
@@ -13340,46 +13296,7 @@ footer .otherLink a:focus > img {
     margin: 0 17px 0 0; }
   /*æœå°‹æŒ‰éˆ•*/
   .searchBox dl {
-    margin-right: 5px; }
-  input.long {
-    width: 162px; }
-  /*å¤–é€£é */
-  .linkOutPage {
-    background: url(../../images/linkOutPageBg2.jpg) no-repeat bottom right/cover; }
-  .linkOutPage .box {
-    width: 86%;
-    height: auto;
-    margin-left: 0%;
-    margin-top: 8vh;
-    top: 0;
-    left: 7%; }
-  .linkOutPage .box span p {
-    margin: 0 0 13px 0; }
-  .linkOutPage .logo a {
-    width: 88%; }
-  .linkOutPage .box p.t1 {
-    font-size: 275%; }
-  .linkOutPage .box span {
-    padding: 16px 28px; }
-  .linkOutPage .box span {
-    padding: 16px 28px; }
-  .otherPage .backBtn a {
-    margin-bottom: 12px; }
-  /*404*/
-  .errorPage .box {
-    width: 80%;
-    margin-right: -40%; }
-  .otherPage .logo a {
-    width: 100%; }
-  .errorPage .box p.t1 {
-    font-size: 400%;
-    display: block;
-    margin: 0 auto;
-    text-align: center; }
-  .errorPage .box p.t2 {
-    display: block;
-    font-size: 320%;
-    text-align: center; } }
+    margin-right: 5px; } }
 
 @media screen and (max-width: 376px) {
   .main article {
@@ -13388,21 +13305,12 @@ footer .otherLink a:focus > img {
     padding: 7px 20px 9px 20px; }
   .searchBox {
     padding: 12px 20px 13px 20px; }
-  /*å…¨ç‰ˆçš„é¸å–®*/
   .full header nav ul > *:nth-child(odd) {
     margin-bottom: 3px; }
   .full header nav li {
     width: 100%; }
   .hideH1 header h2 {
     font-size: 205%; }
-  /*ç¬¬ä¸‰å±¤é¸å–®æ¨™é¡Œä¸‹å•¦*/
-  .mobileSecondBtn i {
-    width: 100%;
-    margin-left: -50%;
-    font-size: 99%;
-    line-height: 47px;
-    height: 45px;
-    margin-top: 9px; }
   .mobileSecondBtn ul.focus {
     margin-top: 60px; }
   .leftBtns .mobileSecondBtn > a.focus {
@@ -13415,35 +13323,7 @@ footer .otherLink a:focus > img {
     left: -24px; }
   .leftBtns .mobileSecondBtn > a.focus:after {
     width: 45px;
-    right: -24px; }
-  .mobileSecondBtn ul.focus {
-    width: 100%; }
-  /*vic*/
-  .about_4 > ul > li {
-    font-size: 137%; }
-  /*å¤–é€£*/
-  .linkOutPage .box {
-    width: 90%;
-    left: 5%; }
-  .linkOutPage .box p.t1 {
-    font-size: 237%; }
-  .linkOutPage .box span {
-    font-size: 94%;
-    padding: 16px 16px; }
-  /*404*/
-  .errorPage .box {
-    top: 4vh; }
-  .errorPage h1.logo {
-    margin-bottom: 0; }
-  .errorPage .box {
-    width: 90%;
-    margin-right: -45%; }
-  .errorPage .box p.t1 {
-    font-size: 330%; }
-  .errorPage .box p.t2 {
-    font-size: 261%; }
-  .otherPage .box span {
-    font-size: 95%; } }
+    right: -24px; } }
 
 .demo {
   width: 450px;
