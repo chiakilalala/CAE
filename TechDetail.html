@@ -4,19 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>會員中心</title>
+    <title>焦點新聞</title>
     <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/all.css">
     <script src="./js/jquery.3.31.js">
     </script>
-    <script src="./js/jquery.ui.js "></script>
+
+    <script src="./js/jquery.ui.js"></script>
     <script src="./js/jquery.mCustomScrollbar.concat.min.js "></script>
     <script src="./js/swiper-min.js"></script>
 </head>
 
 <body>
-
     <div class="wrapper wrapper_color outerWrap">
+        <!-- searchArea -->
+        <div class="searchArea">
+            <!-- searchArea -->
+            <a href="javascript:;" class="btnClose">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="inner">
+                <!-- inner -->
+                <form class="search-container">
+                    <input type="text" id="search-bar" placeholder="搜尋關鍵字...">
+                    <button type="submit" class="search_Button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+                <!-- inner end -->
+            </div>
+
+        </div>
         <!--loginArea-->
         <div class="loginArea moduleBox" id="moduleMember">
             <div class="box">
@@ -53,6 +74,9 @@
                     </div>
                 </div>
                 <!--login end-->
+
+
+
                 <div class="forgetCheck">
                     <!--forgetCheck-->
                     <h4 class="m-member-form__title h-t4">查詢密碼</h4>
@@ -82,9 +106,7 @@
         <!--loginArea end-->
         <section class="Nav">
             <nav class="topNavWrap">
-
                 <ul class="subNavTxt">
-
                     <li><a target="＃" href="index.html ">Home</a> /</li>
                     <li><a target="＃" href="contact.html"> 聯絡我們 /</a>
                     </li>
@@ -117,14 +139,14 @@
                 </div>
             </nav>
             <nav class="mainNavWrap hideMenu" style="">
-                <ul class="topNav topNav_notice ">
+                <ul class="topNav topNav_btn-color">
                     <li class="NoLv3 haveSecond ">
                         <a class=" " href="javascript:void(0) ">
                             <i class="fab fa-sellsy"></i><span>中心簡介 </span>
                         </a>
                         <ul>
                             <li class="Level2 ">
-                                <a target="_self" href="about.html">    關於CAE中心 </a>
+                                <a target="_self" href="about.html"> 關於CAE中心 </a>
                             </li>
 
                             <li class="Level2 ">
@@ -142,7 +164,10 @@
                         </a>
                         <ul>
                             <li class="Level2 ">
-                                <a href="news.html">技術新知</a>
+                                <a href="news.html">焦點新聞</a>
+                            </li>
+                            <li class="Level2 ">
+                                <a href="TechDetail.html">技術新知</a>
                             </li>
                             <li class="Level2 ">
                                 <a href="Photogallery.html"> 活動集錦</a>
@@ -160,7 +185,6 @@
                             </li>
                             <li class="Level2 ">
                                 <a target=" _self " href="EduDetail.html"> 教育訓練課程 </a>
-
                             </li>
                         </ul>
                     </li>
@@ -199,7 +223,6 @@
                             </li>
                             <li class="Level2 ">
                                 <a target=" _self " href="faq.html"> 常見問題 </a>
-
                             </li>
                         </ul>
                     </li>
@@ -223,9 +246,6 @@
                             <i class="far fa-user"></i><span>會員專區</span>
                         </a>
                         <ul>
-                            <li class="Level2 ">
-                                <a href="member_center.html"> 會員中心 </a>
-                            </li>
                             <li class="Level2 ">
                                 <a href="member_right.html"> 會員權益 </a>
                             </li>
@@ -276,100 +296,226 @@
 
             <div class="container">
                 <div class="col-md-12 h-text-center">
-                    <h1> 會員中心</h1>
+                    <h1> 科技新知</h1>
                 </div>
             </div>
         </section>
-        <article>
 
-            <section class="main-content">
-                <div class="container px-md-4">
-                    <div class="row">
+        <section class="main-content">
+            <div class="container px-md-4">
+                <div class="row">
+                    <div class="col-sm-12 col-xl-9">
+                        <div class="container">
+                            <ul class="e-breadcrumb ml-0">
+                                <li>首頁</li>
+                                <li>公告服務</li>
+                                <li> 科技新知</li>
+                            </ul>
 
-
-                        <div class="col-md-12 col-xl-3 ">
-                            <div class="container px-3">
-                                <ul class="e-breadcrumb">
-                                    <li>首頁</li>
-                                    <li>會員專區</li>
-                                    <li>會員中心</li>
-
-                                </ul>
-                                <nav class="m-search-menu">
-                                    <ul class="m-search-menu__list">
-                                        <li><a class="m-search-menu__link " href="member_center.html">繳費紀錄</a></li>
-                                        <li><a class="m-search-menu__link is-active" href="member_point.html">點數使用紀錄</a></li>
-                                        <li><a class="m-search-menu__link">預約紀錄</a></li>
-
-                                        <li><a class="m-search-menu__link " href="member_maintain.html"> 帳號維護</a></li>
-                                        <li><a class="m-search-menu__link"> 檔案下載</a></li>
-                                    </ul>
-                                </nav>
-
-
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-xl-8">
-
-                            <div class=" m-content px-3 mb-2">
-
-                                <h3 class="articleTitle">繳費紀錄</h3>
-                                <p class="thankInfo">剩於可用點數：<em class="h-text-success">68,250</em> </p>
-
-                                <div class="responsive ">
-                                    <table class="table table-bordered  table_member">
-                                        <thead>
-                                            <tr>
-                                                <!-- <th>#</th> -->
-                                                <th>使用日期</th>
-                                                <th>使用時數</th>
-                                                <th>使用點數</th>
-
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-
-                                                <td>2020/05/06</td>
-                                                <td>0.5</td>
-                                                <td>0</td>
-
-                                            </tr>
-                                            <tr>
-
-                                                <td>2020/05/06</td>
-                                                <td>0.5</td>
-                                                <td>300</td>
-
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
+                            <div class="toolbar ">
+                                <div>
+                                    <select class="styled-select">
+                                        <option value="">2017</option>
+                                        <option value="all">2018</option>
+                                        <option value="selected">2019</option>
+                                        <option value="selected">2020</option>
+                                        <span class="fa fa-sort-desc"></span>
+                                    </select>
                                 </div>
-                                <!-- 頁數 -->
-                                <ul class=" e-pagination modal-1 mt-4">
-                                    <li><a href="#" class="prev">&laquo</a></li>
-                                    <li><a href="#" class="active">1</a></li>
-                                    <li> <a href="#">2</a></li>
-                                    <li> <a href="#">3</a></li>
-                                    <li> <a href="#">4</a></li>
+                                <div>
+                                    <select class="styled-select">
+                                        <option value="">月份</option>
+                                        <option value="all">12月</option>
+                                        <option value="selected">11月</option>
+                                        <option value="selected">10</option>
+                                        <span class="fa fa-sort-desc"></span>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select class="styled-select">
+                                        <option value="">軟體商</option>
+                                        <option value="all">CAE中心</option>
+                                        <span class="fa fa-sort-desc"></span>
 
-                                    <li><a href="#" class="next">&raquo;</a></li>
-                                </ul>
+
+                                    </select>
+                                </div>
+                                <div class="search">
+                                    <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                                    <button type="submit" class="searchButton">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+
                             </div>
+                            <div class="clearfix">
+                            </div>
+                            <ul class="list">
+
+                                <li class="element-item" style="display: list-item;">
+                                    <a href="news_list.html" name="">
+                                        <div class="news-image-list">
+                                            <img src="./img/vue.jpg" alt="" class="e-img">
+                                        </div>
+                                        <div class="news-info-list">
+                                            <p class="date_list">2020/08/10
+                                            </p>
+                                            <p class="newsTilte">產學研獻策 加快產業智慧節能轉型</p>
+                                            <p class="newsContent">
+                                                過去國內鍛造業者仍以傳統鍛造製程生產，僅能以後續機械加工來提升產品精度，以致在成本、加工效率、工件特性上之競爭力不足，難以拓展國際市場。在鍛造成形技術上，普遍以試誤法，經由量測鍛造後的尺寸精度來修整模仁，不僅浪費材料成本，拉長製程開發時間...
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="element-item" style="display: list-item;">
+                                    <a href="news_list.html" name="">
+                                        <div class="news-image-list">
+                                            <img src="./img/vue.jpg" alt="">
+                                        </div>
+                                        <div class="news-info-list">
+                                            <p class="date_list">2020/08/10
+                                            </p>
+                                            <p class="newsTilte">產學研獻策 加快產業智慧節能轉型</p>
+                                            <p class="newsContent">
+                                                過去國內鍛造業者仍以傳統鍛造製程生產，僅能以後續機械加工來提升產品精度，以致在成本、加工效率、工件特性上之競爭力不足，難以拓展國際市場。在鍛造成形技術上，普遍以試誤法，經由量測鍛造後的尺寸精度來修整模仁，不僅浪費材料成本，拉長製程開發時間...
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="element-item" style="display: list-item;">
+                                    <a href="" name="">
+                                        <div class="news-image-list">
+                                            <img src="./img/vue.jpg" alt="">
+                                        </div>
+                                        <div class="news-info-list">
+                                            <p class="date_list">2020/08/10
+                                            </p>
+                                            <p class="newsTilte">產學研獻策 加快產業智慧節能轉型</p>
+                                            <p class="newsContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolores modi, voluptatum provident velit sed nemo rem magni temporibus, magnam iusto animi corrupti architecto, optio inventore est accusamus
+                                                sint doloremque.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="element-item">
+                                    <a href="" name="">
+                                        <div class="news-image-list">
+                                            <img src="./img/vue.jpg" alt="">
+                                        </div>
+                                        <div class="news-info-list">
+                                            <p class="date_list">2020/08/10 <span class="category">鑄造產業 </span>
+                                            </p>
+                                            <p class="newsTilte">產學研獻策 加快產業智慧節能轉型</p>
+                                            <p class="newsContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolores modi, voluptatum provident velit sed nemo rem magni temporibus, magnam iusto animi corrupti architecto, optio inventore est accusamus
+                                                sint doloremque.</p>
+                                        </div>
+                                    </a>
+                                </li>
 
 
+                            </ul>
+
+                            <!-- 頁數 -->
+                            <ul class=" e-pagination modal-1 my-3">
+                                <li><a href="#" class="prev">&laquo</a></li>
+                                <li><a href="#" class="active">1</a></li>
+                                <li> <a href="#">2</a></li>
+                                <li> <a href="#">3</a></li>
+                                <li> <a href="#">4</a></li>
+
+                                <li><a href="#" class="next">&raquo;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-3">
+
+                        <div class="e_news mt-4">
+                            <h3> <i class="fas fa-bullhorn"></i> 熱門研討會</h3>
+
+                            <ul class="items_news items_news_muted">
+                                <li class="oneNews Hot">
+                                    <a title="應用 FLOW-3D 於 Binder Jetting 黏著劑噴塗成型技術 " href="#">
+                                        <span class="newsDate">
+                                            <u>2020</u><i>08/24</i>
+                                        </span>
+                                        <h2>應用 FLOW-3D 於 Binder Jetting 黏著劑噴塗成型技術</h2>
+                                        <b class="department"></b>
+                                    </a>
+                                </li>
+                                <li class="oneNews">
+                                    <a title=" DEFORM進階課程 " href="#">
+                                        <span class="newsDate"> <u>2020</u><i>08/27</i> </span>
+                                        <h2> DEFORM進階課程 </h2>
+                                    </a>
+                                </li>
+                                <li class="oneNews">
+                                    <a title="FLOW-3D Cast高壓鑄造訓練課程 " href="#">
+                                        <span class="newsDate"> <u>2020</u><i>08/27</i> </span>
+                                        <h2>FLOW-3D Cast高壓鑄造訓練課程</h2>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="e_news">
+                            <h3> <i class="fas fa-chalkboard-teacher"></i>熱門課程</h3>
+                            <ul class="items_news items_news_muted">
+                                <li class="oneNews Hot">
+
+
+                                    <a title="應用 FLOW-3D 於 Binder Jetting 黏著劑噴塗成型技術 " href="#">
+                                        <span class="newsDate newsDate_title_color">
+                                            <u>2020</u><i>08/24</i>
+                                        </span>
+
+
+                                        <h2>應用 FLOW-3D 於 Binder Jetting 黏著劑噴塗成型技術</h2>
+                                        <b class="department"></b>
+
+
+
+                                    </a>
+
+                                </li>
+                                <li class="oneNews">
+                                    <a title=" DEFORM進階課程 " href="#">
+
+                                        <span class="newsDate newsDate_title_color"> <u>2020</u><i>08/27</i> </span>
+
+                                        <h2> DEFORM進階課程 </h2>
+
+                                    </a>
+                                </li>
+                                <li class="oneNews">
+                                    <a title="FLOW-3D Cast高壓鑄造訓練課程 " href="#">
+
+                                        <span class="newsDate newsDate_title_color"> <u>2020</u><i>08/27</i> </span>
+
+                                        <h2>FLOW-3D Cast高壓鑄造訓練課程</h2>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="e_news">
+                            <h3> <i class="fas fa-newspaper"></i> 廣告專區</h3>
+                            <ul class="items_news items_news_ad_color">
+
+                                <li><a class="expanded">Lastest News</a></li>
+
+
+
+
+
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-            </section>
-
-
-        </article>
-
-
-
+            </div>
+        </section>
 
         <footer class="l-footer pt-5 pb-1">
             <div class="container px-md-4 px-lg-2">
