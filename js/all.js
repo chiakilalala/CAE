@@ -258,7 +258,7 @@ $(function () {
 
     ctrlScrollbarMenu(_windowWidth);
   }, 1000));
-  $(window).trigger('resize'); // $(".fixedBtn").hide();
+  $(window).trigger('resize'); // $(".fixedBtn").hide$(function() {();
 
   function ctrlFixedBtn() {
     if ($(window).scrollTop() > 500) {

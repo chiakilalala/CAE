@@ -8307,7 +8307,7 @@ html {
   .m-hero::before {
     z-index: -1;
     background-color: black;
-    background-image: url("../../img/top_bg.svg");
+    background-image: url("./../img/top_bg.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }
@@ -8316,7 +8316,7 @@ html {
     background-color: black; }
   .m-hero__bg {
     background-color: black;
-    background-image: url("../../img/top_bg.svg");
+    background-image: url("./../img/top_bg.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -8328,7 +8328,7 @@ html {
     @media (max-width: 767.98px) {
       .m-hero__bg {
         background-color: black;
-        background-image: url("../../img/top_bg.svg"); } }
+        background-image: url("./../img/top_bg.svg"); } }
   .m-hero__content {
     position: absolute;
     left: 50%;
@@ -11301,7 +11301,7 @@ body.withoutJs {
     border-radius: 15px;
     padding: 12px 15px;
     height: 5.71429rem;
-    width: 100%;
+    width: 95%;
     max-width: 1440px;
     margin: 0 auto;
     overflow: hidden; }
