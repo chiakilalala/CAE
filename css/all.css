@@ -8322,6 +8322,9 @@ html {
     background-position: center center;
     width: 100vw;
     height: 35.71429rem; }
+    @media (max-width: 768px) {
+      .m-hero__bg {
+        height: 28.57143rem; } }
     @media (max-width: 767.98px) {
       .m-hero__bg {
         background-color: black;
@@ -8372,6 +8375,9 @@ html {
   @media screen and (max-height: 500px) and (min-width: 992px) {
     .blog-slider {
       height: 350px; } }
+  @media (max-width: 576px) {
+    .blog-slider {
+      min-height: 400px; } }
   .blog-slider__item {
     display: flex;
     align-items: center; }
@@ -8383,6 +8389,9 @@ html {
       height: 100%;
       max-width: 100%;
       background-position: center center; }
+      @media screen and (max-width: 576px) {
+        .blog-slider__item.swiper-slide-active .blog-slider__img {
+          height: 400px; } }
       .blog-slider__item.swiper-slide-active .blog-slider__img img {
         opacity: 1;
         transition-delay: .3s; }
@@ -8435,10 +8444,11 @@ html {
     @media screen and (max-width: 768px) {
       .blog-slider__img {
         width: 100%;
-        padding-bottom: 78%; } }
+        padding-bottom: 55%; } }
     @media screen and (max-width: 576px) {
       .blog-slider__img {
-        width: 100%; } }
+        width: 100%;
+        padding-bottom: 50%; } }
     @media screen and (max-height: 500px) and (min-width: 992px) {
       .blog-slider__img {
         height: 270px; } }
