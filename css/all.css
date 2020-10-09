@@ -12873,7 +12873,7 @@ footer .otherLink a:focus > img {
 
 .goTop {
   bottom: 105px;
-  background: #f99620 url(../../img/goTop.svg) no-repeat center 13px/32%; }
+  background: #f99620 url(./../img/goTop.svg) no-repeat center 13px/32%; }
 
 .goBack {
   bottom: 20px;
