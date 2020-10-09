@@ -77,29 +77,31 @@ $(function () {
   //     $('h1').before(dom);
   //     $('.desktop-listbutton').removeClass('focus');
   // }
-  // var addScrollbarMenu = $('.topNav>li ul li ul');
-  // function ctrlScrollbarMenu(width) {
-  //     if (width > 1024) {
-  //         if (addScrollbarMenu.hasClass('mCustomScrollbar') === true) {
-  //             return false
-  //         } else {
-  //             addScrollbarMenu.mCustomScrollbar({
-  //                 theme: 'dark-3',
-  //                 scrollInertia: 400,
-  //                 mouseWheel: {
-  //                     preventDefault: true
-  //                 }
-  //             });
-  //         }
-  //     } else {
-  //         if (addScrollbarMenu.hasClass('mCustomScrollbar') === true) {
-  //             addScrollbarMenu.mCustomScrollbar('destroy');
-  //         } else {
-  //             return false
-  //         }
-  //     }
-  // }
 
+
+  var addScrollbarMenu = $('.topNav>li ul li ul');
+
+  function ctrlScrollbarMenu(width) {
+    if (width > 1024) {
+      if (addScrollbarMenu.hasClass('mCustomScrollbar') === true) {
+        return false;
+      } else {
+        addScrollbarMenu.mCustomScrollbar({
+          theme: 'dark-3',
+          scrollInertia: 400,
+          mouseWheel: {
+            preventDefault: true
+          }
+        });
+      }
+    } else {
+      if (addScrollbarMenu.hasClass('mCustomScrollbar') === true) {
+        addScrollbarMenu.mCustomScrollbar('destroy');
+      } else {
+        return false;
+      }
+    }
+  }
 
   $(window).on('resize', debounce(function () {
     var _windowWidth = $(window).width();
