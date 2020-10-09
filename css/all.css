@@ -2339,9 +2339,7 @@ body {
 body {
   background-color: #F0F0F7;
   color: #0B3B7C;
-  font-family: Arial, Helvetica, 'Noto Sans TC', "Microsoft JhengHei", Sans-Serif;
-  font-size: 1rem;
-  font-weight: 300;
+  font-family: 'Noto Sans TC', "Microsoft JhengHei", "微軟正黑體", Arial, Helvetica, Sans-Serif;
   line-height: 1.5;
   letter-spacing: 0.08rem; }
 
@@ -7076,7 +7074,7 @@ html {
     margin-left: auto !important; } }
 
 .h-bg-depGreen {
-  background-color: #55c187 !important; }
+  background-color: #06a5a5 !important; }
 
 .h-bg-notice {
   background-color: #e8a704 !important; }
@@ -7133,7 +7131,7 @@ html {
   background-color: black !important; }
 
 .h-text-depGreen {
-  color: #55c187 !important; }
+  color: #06a5a5 !important; }
 
 .h-text-notice {
   color: #e8a704 !important; }
@@ -7265,7 +7263,7 @@ html {
     background-color: #235EAF;
     color: white; }
   .e-btn_depGreen {
-    background-color: #55c187; }
+    background-color: #06a5a5; }
   .e-btn_notice {
     background-color: #e8a704; }
   .e-btn_Nav_color {
@@ -7801,9 +7799,9 @@ html {
     transform: rotate(-225deg);
     transform-origin: center bottom; }
   .e-ribbon_depGreen::before, .e-ribbon_depGreen::after {
-    border-color: #3da66e; }
+    border-color: #047474; }
   .e-ribbon_depGreen .e-ribbon__label {
-    background-color: #55c187; }
+    background-color: #06a5a5; }
   .e-ribbon_notice::before, .e-ribbon_notice::after {
     border-color: #b68303; }
   .e-ribbon_notice .e-ribbon__label {
@@ -7884,7 +7882,7 @@ html {
   border-radius: 15px;
   letter-spacing: 1.5; }
   .e_bandge_depGreen::before, .e_bandge_depGreen::after {
-    background-color: #55c187; }
+    background-color: #06a5a5; }
   .e_bandge_notice::before, .e_bandge_notice::after {
     background-color: #e8a704; }
   .e_bandge_Nav_color::before, .e_bandge_Nav_color::after {
@@ -8061,10 +8059,10 @@ html {
     .m-card__button > i {
       padding-right: 0.64286rem; }
     .m-card__button_depGreen {
-      color: #55c187;
-      border-color: #55c187; }
+      color: #06a5a5;
+      border-color: #06a5a5; }
       .m-card__button_depGreen:hover {
-        background-color: #55c187;
+        background-color: #06a5a5;
         color: white; }
     .m-card__button_notice {
       color: #e8a704;
@@ -8521,8 +8519,9 @@ html {
             width: 30px; } }
 
 .m-member-form {
-  border-top: 3px solid #ff5e45;
-  padding: 1rem; }
+  border-top: 3px solid #115FA3;
+  padding: 1rem;
+  background-color: white; }
   .m-member-form__title {
     font-weight: 700;
     text-align: center; }
@@ -8871,7 +8870,7 @@ table {
   width: 100%;
   background-color: #fff; }
   table_depGreen {
-    background-color: #55c187; }
+    background-color: #06a5a5; }
   table_notice {
     background-color: #e8a704; }
   table_Nav_color {
@@ -10302,9 +10301,12 @@ input#search-bar {
         width: 14.28571rem;
         height: 9.64286rem;
         margin-bottom: 12px; } }
-    @media (max-width: 768px) {
+    @media (max-width: 576px) {
       .p-class__form {
         display: none; } }
+  @media (max-width: 576px) {
+    .p-class__button {
+      display: none; } }
   .p-class__content {
     background-color: #F0F0F7;
     border-radius: 1.42857rem;
@@ -10315,14 +10317,28 @@ input#search-bar {
     margin-top: 4rem;
     width: 100%;
     height: 100%;
-    padding: 30px 15px; }
+    padding: 30px 15px;
+    background-image: none; }
     @media (max-width: 1024px) {
       .p-class__content {
         flex-direction: column;
         justify-content: center; } }
-    @media (max-width: 768px) {
+    @media (max-width: 576px) {
       .p-class__content {
-        margin-top: 0rem; } }
+        margin-top: 0rem;
+        max-width: 100%;
+        background-image: url(./../img/123.png);
+        height: 208px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 0;
+        background-color: transparent; } }
+
+.scroll {
+  position: relative; }
+  .scroll li {
+    height: 70px;
+    font-size: 1.1rem; }
 
 .p-tab__content {
   width: 100%;
@@ -10529,7 +10545,7 @@ section.Nav.NavFixed,
 .topNav {
   box-shadow: none; }
   .topNav_depGreen {
-    background-color: #55c187; }
+    background-color: #06a5a5; }
   .topNav_notice {
     background-color: #e8a704; }
   .topNav_Nav_color {
@@ -11004,9 +11020,9 @@ li.oneNews:first-child {
     color: white; }
   .newsBox > span a.color_depGreen {
     color: white;
-    background-color: #55c187; }
+    background-color: #06a5a5; }
     .newsBox > span a.color_depGreen:hover {
-      background-color: #2f8155;
+      background-color: #024343;
       color: white; }
   .newsBox > span a.color_notice {
     color: white;
@@ -11243,7 +11259,7 @@ body.withoutJs {
 .m-Marquee {
   position: relative;
   background-color: white;
-  padding: 50px 0px 100px 0px; }
+  padding: 50px 0px 67px 0px; }
   @media screen and (max-width: 992px) {
     .m-Marquee {
       padding: 50px 22px 54px 22px; } }
@@ -11277,7 +11293,8 @@ body.withoutJs {
     height: 5.71429rem;
     width: 100%;
     max-width: 1440px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    overflow: hidden; }
   .m-Marquee__text {
     display: flex;
     justify-content: center;
@@ -11590,7 +11607,7 @@ ul.tabs2 li.active_2 {
     .e_news .switchpic {
       display: none !important; } }
   .e_news_depGreen {
-    background-color: #55c187; }
+    background-color: #06a5a5; }
   .e_news_notice {
     background-color: #e8a704; }
   .e_news_Nav_color {
@@ -11636,7 +11653,7 @@ ul.tabs2 li.active_2 {
   min-height: 40px;
   padding: 20px 25px; }
   .items_news_depGreen {
-    border-color: #55c187; }
+    border-color: #06a5a5; }
   .items_news_notice {
     border-color: #e8a704; }
   .items_news_Nav_color {
@@ -11694,7 +11711,7 @@ ul.tabs2 li.active_2 {
     margin-bottom: 5px;
     border-radius: 10px; }
     .items_news .oneNews .newsDate_depGreen {
-      background-color: #55c187; }
+      background-color: #06a5a5; }
     .items_news .oneNews .newsDate_notice {
       background-color: #e8a704; }
     .items_news .oneNews .newsDate_Nav_color {
@@ -11874,6 +11891,15 @@ li.oneNews > a {
   margin-left: 10px; }
 
 .date_list {
+  display: inline-block;
+  background: #3784ed;
+  padding: 5px 4px 5px 6px;
+  color: #FFF;
+  font-size: 1rem;
+  margin: 10px;
+  border-radius: 10px; }
+
+.cate_list {
   display: inline-block;
   background: #3784ed;
   padding: 5px 4px 5px 6px;
@@ -12091,7 +12117,6 @@ a:hover {
   top: 0; }
 
 .mainNavWrap.fadeInDown .topNav {
-  background: #115FA3;
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5); }
 
 /*======= subNav 白色的 =======*/

@@ -426,7 +426,25 @@ $(function () {
     $('.login').slideDown(200);
   });
 });
+/*跑馬燈 */
+
+(function () {
+  function scroller() {
+    var scroll = $('.scroll');
+    var height = scroll.height();
+    var topAdj = -height - 10;
+    scroll.animate({
+      'top': [topAdj, 'linear']
+    }, 3000, function () {
+      scroll.css('top', 10);
+      scroller();
+    });
+  }
+
+  scroller();
+})();
 /*首頁輪播 */
+
 
 var swiper = new Swiper('.blog-slider', {
   spaceBetween: 30,

@@ -4,11 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>軟體模擬分析
-    </title>
-    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="./css/all.css">
+    <title>會員登入</title>
+    <link type="text/css" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="./css/all.css">
     <script src="./js/jquery.3.31.js">
     </script>
 
@@ -19,27 +17,6 @@
 
 <body>
     <div class="wrapper wrapper_color outerWrap">
-        <!-- searchArea -->
-        <div class="searchArea">
-            <!-- searchArea -->
-            <a href="javascript:;" class="btnClose">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-            <div class="inner">
-                <!-- inner -->
-                <form class="search-container">
-                    <input type="text" id="search-bar" placeholder="搜尋關鍵字...">
-                    <button type="submit" class="search_Button">
-                        <i class="fa fa-search"></i>
-                     </button>
-                </form>
-                <!-- inner end -->
-            </div>
-
-        </div>
         <!--loginArea-->
         <div class="loginArea moduleBox" id="moduleMember">
             <div class="box">
@@ -76,6 +53,9 @@
                     </div>
                 </div>
                 <!--login end-->
+
+
+
                 <div class="forgetCheck">
                     <!--forgetCheck-->
                     <h4 class="m-member-form__title h-t4">查詢密碼</h4>
@@ -140,7 +120,7 @@
                 </div>
             </nav>
             <nav class="mainNavWrap hideMenu">
-                <ul class="topNav topNav_third-color">
+                <ul class="topNav topNav_notice">
                     <li class="NoLv3 haveSecond ">
                         <a class=" " href="javascript:void(0) ">
                             <i class="fab fa-sellsy"></i><span>中心簡介 </span>
@@ -301,157 +281,59 @@
 
             <div class="container">
                 <div class="col-md-12 h-text-center">
-
-                    <h1> 軟體模擬分析</h1>
+                    <h1> 會員登入</h1>
                 </div>
             </div>
         </section>
+
+
         <section class="main-content">
             <div class="container px-md-4">
                 <div class="row">
-                    <div class="col-md-12 col-xl-9">
-                        <div class="container ml-0">
-                            <ul class="e-breadcrumb">
-                                <li>首頁</li>
-                                <li>軟體模擬分析</li>
-                                <li>模擬執行</li>
-                            </ul>
-                            <div class="toolbar mb-4 justify-content-around">
-                                <p class="thankInfo mt-1"> 需先進入會員 才會顯示預約軟體畫面 </p>
+                    <div class="col-md-12">
+                        <div class=" m-ponent ">
+                            <div class="col-12 col-md-6 col-xl-4 pt-5 mx-auto">
 
-                                <div class="search">
-                                    <input type="text" class="searchTerm" placeholder="尋找關鍵字?">
-                                    <button type="submit" class="searchButton">
-                                <i class="fa fa-search"></i>
-                             </button>
+                                <div class="m-member-form h-shadow ">
+                                    <h4 class="m-member-form__title mb-1">LOGIN</h4>
+                                    <label class="m-member-form__label" for="email">會員帳號*</label>
+                                    <div class="e-form-square mb-1"><i class="e-form-square__icon far fa-envelope"></i>
+                                        <input class="e-form-square__input" type="email" name="email">
+                                    </div>
+                                    <label class="m-member-form__label" for="password">密 碼*</label>
+                                    <div class="e-form-square mb-1"><i class="e-form-square__icon fas fa-lock"></i>
+                                        <input class="e-form-square__input" type="password" name="password">
+                                    </div>
+                                    <label class="m-member-form__label" for="verty">驗證碼*</label>
+                                    <div class="e-form-square__vertify justify-content-between">
+                                        <input class=" pr-1" type="text" name="verty">
+                                        <img src="./img/vertify.png" alt="" class="e-img" style="height:35px">
+
+                                    </div>
+
+                                    <a class="h-s1 h-text-success">忘記密碼？</a>
+                                    <div class="m-member-form__buttons mt-3"> <a class="e-btn e-btn_muted " href="register.html"> 註 冊</a>
+                                        <button class="e-btn e-btn_success ">登 入     </button>
+                                    </div>
                                 </div>
-
                             </div>
-                            <div class="clearfix">
-                            </div>
-                            <div class="table-responsive-blocks ">
-                                <table class="table table-bordered  table_soft">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>軟體名稱</th>
-                                            <th>軟體類別</th>
-                                            <th>軟體簡介</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td data-title="軟體名稱">FLOW-3D Cast (I) 前處理+求解器</td>
-                                            <td data-title="軟體類別">鑄造</td>
-                                            <td data-title="軟體簡介"><a href="soft_page.html">《FLOW-3D®是國際知名流體力學...</a></td>
-
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td data-title="軟體名稱">FLOW-3D Cast (I) 前處理+求解器</td>
-                                            <td data-title="軟體類別">鑄造</td>
-                                            <td data-title="軟體簡介">FLOW-3D®是國際知名流體力學...</td>
 
 
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td data-title="軟體名稱">FLOW-3D Cast (I) 前處理+求解器</td>
-                                            <td data-title="軟體類別">鑄造</td>
-                                            <td data-title="軟體簡介">
-                                                FLOW-3D®是國際知名流體力學...</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- 頁數 -->
-                            <ul class=" e-pagination modal-1 mt-4">
-                                <li><a href="#" class="prev">&laquo</a></li>
-                                <li><a href="#" class="active">1</a></li>
-                                <li> <a href="#">2</a></li>
-                                <li> <a href="#">3</a></li>
-                                <li> <a href="#">4</a></li>
 
-                                <li><a href="#" class="next">&raquo;</a></li>
-                            </ul>
 
                         </div>
-                    </div>
-                    <div class="col-md-12 col-xl-3">
-                        <div class="e_news mt-4">
-                            <h3> <i class="fas fa-bullhorn"></i> 熱門研討會</h3>
-                            <ul class="items_news items_news_muted">
-                                <li class="oneNews Hot">
-                                    <a title="應用 FLOW-3D 於 Binder Jetting 黏著劑噴塗成型技術 " href="#">
-                                        <span class="newsDate">
-                                         <u>2020</u><i>08/24</i>
-                                        </span>
-
-                                        <h2>應用 FLOW-3D 於 Binder Jetting 黏著劑噴塗成型技術</h2>
-                                        <b class="department"></b>
-                                    </a>
-                                </li>
-                                <li class="oneNews">
-                                    <a title=" DEFORM進階課程 " href="#">
-                                        <span class="newsDate"> <u>2020</u><i>08/27</i> </span>
-                                        <h2> DEFORM進階課程 </h2>
-                                    </a>
-                                </li>
-                                <li class="oneNews">
-                                    <a title="FLOW-3D Cast高壓鑄造訓練課程 " href="#">
-                                        <span class="newsDate"> <u>2020</u><i>08/27</i> </span>
-                                        <h2>FLOW-3D Cast高壓鑄造訓練課程</h2>
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="e_news">
-                            <h3> <i class="fas fa-chalkboard-teacher"></i>熱門課程</h3>
-                            <ul class="items_news items_news_muted">
-                                <li class="oneNews Hot">
 
 
-                                    <a title="應用 FLOW-3D 於 Binder Jetting 黏著劑噴塗成型技術 " href="#">
-                                        <span class="newsDate newsDate_title_color">
-                                         <u>2020</u><i>08/24</i>
-                                            </span>
-                                        <h2>應用 FLOW-3D 於 Binder Jetting 黏著劑噴塗成型技術</h2>
-                                        <b class="department"></b>
-                                    </a>
-                                </li>
-                                <li class="oneNews">
-                                    <a title=" DEFORM進階課程 " href="#">
-
-                                        <span class="newsDate newsDate_title_color"> <u>2020</u><i>08/27</i> </span>
-
-                                        <h2> DEFORM進階課程 </h2>
-
-                                    </a>
-                                </li>
-                                <li class="oneNews">
-                                    <a title="FLOW-3D Cast高壓鑄造訓練課程 " href="#">
-                                        <span class="newsDate newsDate_title_color"> <u>2020</u><i>08/27</i> </span>
-                                        <h2>FLOW-3D Cast高壓鑄造訓練課程</h2>
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </div>
-
-                        <div class="e_news">
-                            <h3> <i class="fas fa-newspaper"></i> 廣告專區</h3>
-                            <ul class="items_news items_news_ad_color">
-
-                                <li><a class="expanded">Lastest News</a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
-
         </section>
+
+
+
+
+
+
 
         <footer class="l-footer pt-5 pb-1">
             <div class="container px-md-4 px-lg-2">
@@ -483,7 +365,7 @@
         <div class="othersBtn">
             <a href="javascript:;" class="fixedBtn goTop" title="回頂端"><b>Top</b></a>
             <!-- <a href="javascript:history.back()" class="fixedBtn goBack" title="回上頁"><b>回上頁</b></a> -->
-            <a href="javascript:;" class="closeOpenMenu" title="關閉選單">關閉選單</a>
+            <!-- <a href="javascript:;" class="closeOpenMenu" title="關閉選單">關閉選單</a> -->
         </div>
 
     </div>
