@@ -12916,18 +12916,6 @@ footer .otherLink a:focus > img {
   opacity: 0;
   position: absolute; }
 
-.fontSize > li a.acc.skiptoolbarMenu {
-  width: auto;
-  height: 38px;
-  font-size: 0.75rem;
-  display: block;
-  line-height: 1.6em;
-  text-align: left;
-  background-color: rgba(0, 0, 0, 0.6) !important;
-  border-radius: unset;
-  color: white;
-  padding: 0 10px; }
-
 .megaBanner .slick-slide img {
   width: 100%; }
 
