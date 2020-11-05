@@ -9753,7 +9753,8 @@ a#closeLogin {
   cursor: pointer;
   background-color: #2E7BD3;
   font-weight: normal;
-  color: white; }
+  color: white;
+  border-bottom: 1px solid; }
   .accordion-thumb::before {
     content: '';
     display: inline-block;
@@ -10647,86 +10648,6 @@ section.Nav.NavFixed,
   right: -43px;
   top: 0; }
 
-/* @-webkit-keyframes tada {
-    from {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-
-    10%,
-    20% {
-        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-    }
-
-    30%,
-    50%,
-    70%,
-    90% {
-        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    }
-
-    40%,
-    60%,
-    80% {
-        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    }
-
-    to {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-}
-
-@keyframes tada {
-    from {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-
-    10%,
-    20% {
-        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-    }
-
-    30%,
-    50%,
-    70%,
-    90% {
-        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    }
-
-    40%,
-    60%,
-    80% {
-        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    }
-
-    to {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-} */
-/*.bgBanner::before{
-    content: '';
-    background-image: url(../../images/festival_banner.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width:600px;
-    height: 600px;
-    position: absolute;
-    bottom: 140px;
-    left: 180px;
-    z-index: 9998;
-    animation: tada 5s infinite;
-    -webkit-animation: tada 5s infinite;
-
-}*/
 @keyframes an1 {
   0% {
     transform: scale(1); }
@@ -12000,18 +11921,6 @@ input.long {
 input.longlong {
   width: 180px; }
 
-.contentFontSmall input.mini {
-  width: 100px; }
-
-.contentFontSmall input.short {
-  width: 160px; }
-
-.contentFontSmall input.middle {
-  width: 220px; }
-
-.contentFontSmall input.long {
-  width: 160px; }
-
 textarea {
   border: none;
   padding: 9px;
@@ -12299,19 +12208,6 @@ a:hover {
     display: inline; } }
 
 /*--分享--*/
-/*--語版--*/
-.subNavOther .lan > a {
-  display: inline-block;
-  background: #fbd116;
-  color: #000;
-  padding: 2px 12px;
-  height: 28px;
-  vertical-align: middle;
-  line-height: 25px; }
-
-.subNavOther .lan > a:hover {
-  background: #FEE36B; }
-
 /*======= mainNav blue瑟的 + 球球 =======*/
 /*----blue色的----*/
 .topNav {
@@ -12444,46 +12340,12 @@ a:hover {
   color: white; }
 
 /*----球球----*/
-.rightNavWrap {
-  position: absolute;
-  right: 5%;
-  top: 53px; }
-
-.rightNav > li > a {
-  width: 112px;
-  margin-bottom: 19px;
-  display: block;
-  text-align: center;
-  position: relative;
-  color: #000; }
-
-.rightNav > li > a:before {
-  content: "";
-  display: inline-block;
-  width: 64px;
-  height: 64px;
-  border-radius: 50px;
-  background-color: #fbd116;
-  position: absolute;
-  left: 24px; }
-
-.rightNav > li > a > span {
-  display: block;
-  font-size: 82%;
-  margin-top: 5px; }
-
 .special .rightNav > li > a > span {
   background: rgba(0, 0, 0, 0.56);
   border-radius: 20px;
   color: white;
   padding: 4px; }
 
-/*.rightNav li a.service:before{background-image: url(../../images/icon/service.svg);}
-.rightNav li a.research:before{background-image: url(../../images/icon/research.svg);}
-.rightNav li a.library:before{background-image: url(../../images/icon/library.svg);}
-.rightNav li a.media:before{background-image: url(../../images/icon/media.svg);}
-.rightNav li a.link:before{background-image: url(../../images/icon/link.svg);}
-*/
 .rightNav > li > a > img {
   display: inline-block;
   width: 64px;
@@ -12761,17 +12623,6 @@ footer a.trigger#close-Panel1 i:after {
 .copyright {
   float: left;
   line-height: 1.7; }
-
-.copyWrap > span:last-child {
-  position: absolute;
-  bottom: 0;
-  right: 0; }
-
-.copyWrap > span:last-child > img {
-  width: 92px;
-  display: inline-block;
-  margin-bottom: -5px;
-  margin-left: 9px; }
 
 .copyright > * {
   display: block; }
