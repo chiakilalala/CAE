@@ -7250,7 +7250,7 @@ html {
   display: inline-block;
   border-radius: 15px;
   background-color: #eee;
-  padding: 0.57143rem 1.42857rem;
+  padding: 0.57143rem 1.28571rem;
   color: white;
   font-size: 1.14286rem;
   text-align: center;
@@ -7258,6 +7258,8 @@ html {
   @media screen and (max-width: 480px) {
     .e-btn {
       padding: 0.35714rem 0.71429rem; } }
+  .e-btn[type="submit"] {
+    padding: 0.35714rem 2.14286rem; }
   .e-btn:hover, .e-btn:focus {
     box-shadow: 0.07143rem 0.85714rem 1rem rgba(0, 0, 0, 0.4);
     background-color: #235EAF;
@@ -7556,9 +7558,6 @@ html {
     padding: 10px;
     width: 100%;
     box-sizing: border-box; }
-  .e-formBox input[type="radio"]:checked, .e-formBox input[type="checkbox"]:checked {
-    background: #01afb8;
-    border: 1px solid #01afb8; }
   .e-formBox input[type="radio"] {
     appearance: none;
     padding: 0;
@@ -7573,21 +7572,14 @@ html {
   .e-formBox label input[type="checkbox"] {
     border: 1px solid #e4e4e4;
     background: #e4e4e4; }
-  .e-formBox .left {
-    clear: right;
-    display: block;
-    float: left;
-    margin-right: 10px;
-    min-width: 80px;
-    max-width: 200px;
-    font-size: 1rem;
-    color: #333;
-    line-height: 35px;
-    font-weight: 400; }
-    .e-formBox .left em {
-      color: #ff3333;
-      font-weight: 400;
-      overflow: hidden; }
+  .e-formBox input[type="radio"]:checked,
+  .e-formBox input[type="checkbox"]:checked {
+    background: #01afb8;
+    border: 1px solid #01afb8; }
+  .e-formBox .left em {
+    color: #ff3333;
+    font-weight: 400;
+    overflow: hidden; }
   .e-formBox .right {
     position: relative; }
   .e-formBox .left {
