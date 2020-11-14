@@ -7258,7 +7258,7 @@ html {
   @media screen and (max-width: 480px) {
     .e-btn {
       padding: 0.35714rem 0.71429rem; } }
-  .e-btn[type="submit"] {
+  .e-btn[type="submit"], .e-btn[type="reset"], .e-btn[type="button"] {
     padding: 0.35714rem 2.14286rem; }
   .e-btn:hover, .e-btn:focus {
     box-shadow: 0.07143rem 0.85714rem 1rem rgba(0, 0, 0, 0.4);
