@@ -10799,20 +10799,19 @@ li.slick-current .image.an2 {
 
 .headline .newsTitle {
   display: block;
-  height: 70px;
+  height: 50px;
   float: left;
   width: calc(100% - 80px);
   padding-left: 18px; }
 
 .headline h2 {
-  font-size: 124%;
+  font-size: 119%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
   color: #2f2f2e;
-  padding-top: 18px;
-  line-height: .8; }
+  padding-top: 10px; }
 
 .newsTitle a {
   display: block; }
@@ -10838,7 +10837,7 @@ li.slick-current .image.an2 {
 .headline .newsCon {
   font-size: 1rem;
   clear: both;
-  padding-top: 16px;
+  padding-top: 12px;
   line-height: 32px;
   height: 148px;
   overflow: hidden;
@@ -10883,8 +10882,8 @@ li.oneNews:first-child {
   color: #2f2f2e;
   margin-right: 10px;
   max-width: calc(100% - 345px);
-  height: 25px;
-  font-size: 1.28571rem;
+  height: 22px;
+  font-size: 1.14286rem;
   overflow: hidden;
   vertical-align: middle;
   text-overflow: ellipsis;
@@ -10919,7 +10918,7 @@ li.oneNews:first-child {
   background: #3784ed;
   padding: 7px 10px 5px 10px;
   color: #FFF;
-  font-size: 1rem;
+  font-size: 0.96429rem;
   margin-right: 20px;
   border-radius: 10px; }
 
