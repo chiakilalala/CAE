@@ -2175,7 +2175,8 @@ a {
   padding: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+  cursor: pointer; }
 
 /* change colours to suit your needs */
 ins {
