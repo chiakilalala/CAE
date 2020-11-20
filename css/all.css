@@ -8932,9 +8932,6 @@ table {
 .table_result > tbody > tr:nth-of-type(odd) {
   background-color: #f9f9f9; }
 
-.table_result > thead > tr > th:nth-child(5) {
-  width: 5%; }
-
 .table > tbody > tr > td,
 .table > tbody > tr > th,
 .table > tfoot > tr > td,
@@ -9004,7 +9001,7 @@ table th {
   text-align: left; }
 
 table th {
-  background-color: #eee; }
+  background-color: #9ad6df; }
 
 /* Actual responsive styling */
 @media (max-width: 767px) {
