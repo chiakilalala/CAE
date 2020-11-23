@@ -7329,12 +7329,13 @@ html {
         border-radius: 0px; } }
   .e-btn_disable {
     cursor: no-drop;
-    pointer-events: none; }
+    pointer-events: none;
+    background-color: #969292; }
     .e-btn_disable:disabled {
       cursor: no-drop; }
     .e-btn_disable:hover, .e-btn_disable:focus {
       box-shadow: none;
-      background-color: none;
+      background-color: #969292;
       color: white; }
 
 .otherClassBox {
