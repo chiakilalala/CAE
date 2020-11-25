@@ -7642,11 +7642,9 @@ html {
     font-size: 1rem;
     transition: all 0.4s ease; }
   .e-formBox input[type="file"] {
-    position: absolute;
-    font-size: 50px;
-    opacity: 0;
-    right: 0;
-    top: 0; }
+    background: #6cb9b9;
+    border: 1px solid #666;
+    border-radius: 6px; }
   .e-formBox .file {
     padding: 5px 10px;
     font-size: 1rem;
@@ -8973,7 +8971,7 @@ table {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  word-wrap: break-word;
+  word-break: break-word;
   text-align: left; }
 
 .table > tbody > tr:hover {
@@ -11585,7 +11583,7 @@ ul.tabs2 li.active_2 {
     display: none; }
   .e-breadcrumb li:before {
     display: inline-block;
-    padding-left: .5rem;
+    padding: 0 .5rem;
     color: #000;
     content: "/"; }
   .e-breadcrumb li.active {
@@ -11654,7 +11652,7 @@ ul.tabs2 li.active_2 {
   background-color: white;
   width: 100%;
   min-height: 40px;
-  padding: 20px 25px; }
+  padding: 15px 20px; }
   .items_news_gray {
     border-color: #969292; }
   .items_news_depGreen {
@@ -11700,21 +11698,20 @@ ul.tabs2 li.active_2 {
     font-size: 100%;
     color: #2f2f2e;
     margin-right: 10px;
-    max-width: calc(100% - 45px);
-    height: 25px;
+    max-width: 100%;
+    height: auto;
     font-size: 0.85714rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
+    overflow: auto;
+    text-overflow: initial;
+    white-space: normal; }
   .items_news .oneNews .newsDate {
     display: inline-block;
     background: #3D9AC6;
-    padding: 4px 4px 4px 5px;
+    padding: 4px;
     color: #FFF;
-    font-size: 12px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    border-radius: 10px; }
+    font-size: 10px;
+    border-radius: 10px;
+    margin: 5px 0px 5px 0; }
     .items_news .oneNews .newsDate_gray {
       background-color: #969292; }
     .items_news .oneNews .newsDate_depGreen {
@@ -12164,11 +12161,18 @@ a:hover {
       display: none; } }
 
 .subNavTxt li {
-  margin: 0 10px 0 0;
+  margin: 0;
   position: relative;
   letter-spacing: 0.01em;
   display: flex;
-  font-size: 13px; }
+  font-size: 12px; }
+  .subNavTxt li:first-child:before {
+    display: none; }
+  .subNavTxt li:before {
+    display: inline-block;
+    padding: 0 .4rem;
+    color: #000;
+    content: "/"; }
 
 .subNavTxt li a {
   color: #2e2e2e;
