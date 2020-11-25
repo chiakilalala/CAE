@@ -8971,7 +8971,7 @@ table {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  word-break: break-word;
+  word-break: keep-all;
   text-align: left; }
 
 .table > tbody > tr:hover {
