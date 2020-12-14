@@ -2380,7 +2380,7 @@ a {
   text-decoration: none;
   color: #0B3B7C; }
   a:hover {
-    color: #115FA3; }
+    color: #1FB5B5; }
 
 input,
 label,
@@ -7494,13 +7494,13 @@ html {
 
 .modal-1 a {
   border-color: #ddd;
-  color: #4285F4;
+  color: #969292;
   background: #fff; }
   .modal-1 a:hover {
     background: #eee; }
   .modal-1 a.active, .modal-1 a:active {
-    border-color: #4285F4;
-    background: #4285F4;
+    border-color: #969292;
+    background: #969292;
     color: #fff; }
 
 .e-sitemap {
@@ -7622,7 +7622,8 @@ html {
   .e-formBox .left em {
     color: #ff3333;
     font-weight: 400;
-    overflow: hidden; }
+    overflow: hidden;
+    font-style: normal; }
   .e-formBox .right {
     position: relative; }
   .e-formBox .left {
@@ -8321,7 +8322,7 @@ html {
     align-items: center;
     transition: 0.5s;
     border-bottom: 1px dashed #115FA3;
-    padding: 0.57143rem 0;
+    padding: 0.57143rem;
     font-size: 1.14286rem;
     font-weight: bolder;
     color: #4D4F5C; }
@@ -9853,18 +9854,10 @@ a#closeLogin {
   font-weight: bold;
   letter-spacing: 0.8px;
   line-height: 1.4;
-  margin: 5px 0 10px;
-  padding: 0 0 30px;
+  margin: 0px;
+  padding: 0px;
   position: relative;
   text-align: left; }
-  .articleTitle:before {
-    content: '';
-    width: 100%;
-    height: 12px;
-    background: url(../../img/dash.png) repeat top left;
-    position: absolute;
-    bottom: 0;
-    left: 0; }
 
 .title_line {
   margin: 20px 0 0;
@@ -11080,6 +11073,8 @@ li.slick-current .image.an2 {
 /*單則*/
 li.oneNews {
   border-bottom: 1px dashed #e7e3d5; }
+  li.oneNews:last-child {
+    border-bottom: none; }
 
 li.onePhoto {
   display: flex;
@@ -12061,7 +12056,7 @@ li.oneNews > a {
 .news-info-list {
   margin-left: 0;
   overflow: hidden;
-  padding: 0 0 0 6px;
+  padding: 0 6px 0 10px;
   position: relative;
   text-align: start;
   margin-top: 7px;
@@ -12073,7 +12068,7 @@ li.oneNews > a {
   font-weight: bolder;
   color: #333;
   padding-bottom: 7px;
-  margin-left: 10px; }
+  margin-left: 0px; }
 
 .date_list {
   display: inline-block;
@@ -12081,7 +12076,7 @@ li.oneNews > a {
   padding: 5px 4px 5px 6px;
   color: #FFF;
   font-size: 1rem;
-  margin: 10px;
+  margin: 10px 0;
   border-radius: 10px; }
 
 .cate_list {
@@ -12189,7 +12184,7 @@ select {
   font-family: "Microsoft JhengHei"; }
 
 a:hover {
-  color: #fbd116;
+  color: #1FB5B5;
   -o-transition: all .15s linear;
   -webkit-transition: all .15s linear;
   -moz-transition: all .15s linear;
@@ -12303,7 +12298,7 @@ a:hover {
 
 .subNavWrap .logo {
   text-indent: -9999px;
-  background: url(./../img/logo_w.png) no-repeat center/cover;
+  background: url(./../img/logov.svg) no-repeat center/cover;
   width: 23.57143rem;
   height: 3.78571rem;
   float: left;
@@ -13076,7 +13071,7 @@ footer .otherLink a:focus > img {
     height: 100%;
     line-height: 68px; }
   .subNavWrap .logo {
-    background: url(./../img/logo_w.png) no-repeat center/contain;
+    background: url(./../img/logov.svg) no-repeat center/contain;
     width: 21.42857rem;
     margin-top: 10px;
     margin-left: 20px;
@@ -13303,19 +13298,6 @@ footer .otherLink a:focus > img {
     margin: .5%;
     margin-bottom: 39px; }
   /*404*/
-  .linkOutPage .box {
-    width: 500px;
-    right: auto;
-    left: calc((100% - 500px)/2);
-    margin-left: 0px;
-    margin-top: 0px; }
-  .linkOutPage .logo a {
-    background: url(../../images/logo_horizontal.png) no-repeat center/contain;
-    width: 346px;
-    margin-top: 35px; }
-  .linkOutPage .box p.t1 {
-    color: white;
-    text-shadow: 0px 0px 23px #000; }
   footer {
     padding: 24px 30px 26px 30px; }
   /*ä¸Šç¨¿èª¿æ•´*/
@@ -13330,7 +13312,7 @@ footer .otherLink a:focus > img {
   .fontSize {
     margin-top: 0; }
   .subNavWrap .logo {
-    background: url(./../img/logo_w.png) no-repeat center/contain;
+    background: url(./../img/logov.svg) no-repeat center/contain;
     width: 180px;
     margin-top: 10px;
     margin-left: 13px; }
