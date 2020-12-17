@@ -2408,7 +2408,7 @@ img {
   border-style: none; }
 
 /*!
- * Bootstrap Grid v4.5.2 (https://getbootstrap.com/)
+ * Bootstrap Grid v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -7074,6 +7074,9 @@ html {
   .mx-xl-auto {
     margin-left: auto !important; } }
 
+.h-bg-service_color {
+  background-color: #ffad45 !important; }
+
 .h-bg-epaer_color {
   background-color: #9444ae !important; }
 
@@ -7142,6 +7145,9 @@ html {
 
 .h-bg-black {
   background-color: black !important; }
+
+.h-text-service_color {
+  color: #ffad45 !important; }
 
 .h-text-epaer_color {
   color: #9444ae !important; }
@@ -7289,6 +7295,8 @@ html {
     box-shadow: 0.07143rem 0.85714rem 1rem rgba(0, 0, 0, 0.4);
     background-color: #235EAF;
     color: white; }
+  .e-btn_service_color {
+    background-color: #ffad45; }
   .e-btn_epaer_color {
     background-color: #9444ae; }
   .e-btn_soft_color {
@@ -7832,6 +7840,10 @@ html {
     left: calc(50% - 3.88393rem);
     transform: rotate(-225deg);
     transform-origin: center bottom; }
+  .e-ribbon_service_color::before, .e-ribbon_service_color::after {
+    border-color: #ff9712; }
+  .e-ribbon_service_color .e-ribbon__label {
+    background-color: #ffad45; }
   .e-ribbon_epaer_color::before, .e-ribbon_epaer_color::after {
     border-color: #753689; }
   .e-ribbon_epaer_color .e-ribbon__label {
@@ -7931,6 +7943,10 @@ html {
   color: white;
   border-radius: 15px;
   letter-spacing: 1.5; }
+  .e_bandge_service_color {
+    background-color: #ffad45; }
+    .e_bandge_service_color::before, .e_bandge_service_color::after {
+      background-color: #ffad45; }
   .e_bandge_epaer_color {
     background-color: #9444ae; }
     .e_bandge_epaer_color::before, .e_bandge_epaer_color::after {
@@ -8165,6 +8181,12 @@ html {
       background-color: #eee; }
     .m-card__button > i {
       padding-right: 0.64286rem; }
+    .m-card__button_service_color {
+      color: #ffad45;
+      border-color: #ffad45; }
+      .m-card__button_service_color:hover {
+        background-color: #ffad45;
+        color: white; }
     .m-card__button_epaer_color {
       color: #9444ae;
       border-color: #9444ae; }
@@ -9025,6 +9047,8 @@ ul.m-navbar__sub {
 table {
   width: 100%;
   background-color: #fff; }
+  table_service_color {
+    background-color: #ffad45; }
   table_epaer_color {
     background-color: #9444ae; }
   table_soft_color {
@@ -10453,7 +10477,7 @@ input#search-bar {
       transform: rotate(139deg);
       width: 35px;
       height: 35px;
-      background-color: #9AD6DF; }
+      background-color: #d1e8eb; }
   .p-class__img {
     background-size: cover;
     background-repeat: no-repeat;
@@ -10674,7 +10698,7 @@ input#search-bar {
 
 .p-activity {
   background-color: white;
-  background-image: url(https://upload.cc/i1/2020/08/29/PneU4W.png);
+  background-image: url(../../img/PneU4W.png);
   background-repeat: no-repeat;
   background-position: 88% top;
   background-size: 8%; }
@@ -10775,7 +10799,7 @@ section:after {
   background: rgba(0, 0, 0, 0.6); }
 
 .subNavWrap .logo {
-  background: url(../../images/logo2.png) no-repeat center/contain; }
+  background: url(./../img/logov.png) no-repeat center/contain; }
 
 .subNavTxt li a {
   color: #FFF; }
@@ -10786,6 +10810,8 @@ section.Nav.NavFixed,
 
 .topNav {
   box-shadow: none; }
+  .topNav_service_color {
+    background-color: #ffad45; }
   .topNav_epaer_color {
     background-color: #9444ae; }
   .topNav_soft_color {
@@ -11163,6 +11189,12 @@ li.oneNews:first-child {
   .newsBox > span a:hover {
     background-color: #188599;
     color: white; }
+  .newsBox > span a.color_service_color {
+    color: white;
+    background-color: #ffad45; }
+    .newsBox > span a.color_service_color:hover {
+      background-color: #de7c00;
+      color: white; }
   .newsBox > span a.color_epaer_color {
     color: white;
     background-color: #9444ae; }
@@ -11366,27 +11398,6 @@ body.withoutJs {
 .HotKeyword ul li a:focus {
   background-color: #3784ed; }
 
-.snowbanner {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  pointer-events: none; }
-
-.snowbanner .snow-1 {
-  background: url("../../images/snow.png");
-  background-repeat: repeat;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: animateone 10s infinite linear;
-  background-size: 500px 500px; }
-
 @-webkit-keyframes animateone {
   0% {
     background-position: 0px 0px; }
@@ -11398,20 +11409,6 @@ body.withoutJs {
     background-position: 0px 0px; }
   100% {
     background-position: 500px 500px; } }
-
-.snowbanner .snow-2 {
-  display: none; }
-
-.snowbanner .snow-3 {
-  background: url("../../images/snow.png");
-  background-repeat: repeat;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: animatethree 10s infinite linear;
-  background-size: 300px; }
 
 @-webkit-keyframes animatethree {
   0% {
@@ -11763,6 +11760,8 @@ ul.tabs2 li.active_2 {
   @media screen and (max-width: 1024px) {
     .e_news .switchpic {
       display: none !important; } }
+  .e_news_service_color {
+    background-color: #ffad45; }
   .e_news_epaer_color {
     background-color: #9444ae; }
   .e_news_soft_color {
@@ -11817,6 +11816,8 @@ ul.tabs2 li.active_2 {
   width: 100%;
   min-height: 40px;
   padding: 15px 20px; }
+  .items_news_service_color {
+    border-color: #ffad45; }
   .items_news_epaer_color {
     border-color: #9444ae; }
   .items_news_soft_color {
@@ -11882,6 +11883,8 @@ ul.tabs2 li.active_2 {
     font-size: 10px;
     border-radius: 10px;
     margin: 5px 0px 5px 0; }
+    .items_news .oneNews .newsDate_service_color {
+      background-color: #ffad45; }
     .items_news .oneNews .newsDate_epaer_color {
       background-color: #9444ae; }
     .items_news .oneNews .newsDate_soft_color {
@@ -12298,8 +12301,8 @@ a:hover {
 
 .subNavWrap .logo {
   text-indent: -9999px;
-  background: url(./../img/logov.svg) no-repeat center/cover;
-  width: 23.57143rem;
+  background: url(./../img/logov.png) no-repeat center/cover;
+  width: 24.28571rem;
   height: 3.78571rem;
   float: left;
   margin-top: 2.07143rem; }
@@ -13071,7 +13074,7 @@ footer .otherLink a:focus > img {
     height: 100%;
     line-height: 68px; }
   .subNavWrap .logo {
-    background: url(./../img/logov.svg) no-repeat center/contain;
+    background: url(./../img/logov.png) no-repeat center/contain;
     width: 21.42857rem;
     margin-top: 10px;
     margin-left: 20px;
@@ -13312,7 +13315,7 @@ footer .otherLink a:focus > img {
   .fontSize {
     margin-top: 0; }
   .subNavWrap .logo {
-    background: url(./../img/logov.svg) no-repeat center/contain;
+    background: url(./../img/logov.png) no-repeat center/contain;
     width: 180px;
     margin-top: 10px;
     margin-left: 13px; }
