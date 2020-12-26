@@ -10600,7 +10600,9 @@ input#search-bar {
     font-weight: 400; }
 
 .scroll {
-  position: relative; }
+  position: absolute;
+  display: flex;
+  left: 5%; }
   .scroll li {
     height: 70px;
     font-size: 1.1rem; }
@@ -10698,7 +10700,7 @@ input#search-bar {
 
 .p-activity {
   background-color: white;
-  background-image: url(../../img/PneU4W.png);
+  background-image: url(./../img/PneU4W.png);
   background-repeat: no-repeat;
   background-position: 88% top;
   background-size: 8%; }

@@ -409,8 +409,8 @@ $(function() {
         var topAdj = -height - 10;
         scroll.animate({
             'top': [topAdj, 'linear']
-        }, 3000, function() {
-            scroll.css('top', 10);
+        }, 8000, function() {
+            scroll.css('top', 50);
             scroller();
         });
     }
