@@ -9845,7 +9845,8 @@ a#closeLogin {
   margin-top: 0;
   width: 100%; }
 
-.loginArea .btn a {
+.loginArea .btn a,
+.loginArea .btn button {
   width: 100%;
   height: 45px;
   line-height: 45px;
@@ -9853,7 +9854,8 @@ a#closeLogin {
   background: #2E7BD3;
   display: block;
   color: white; }
-  .loginArea .btn a:hover {
+  .loginArea .btn a:hover,
+  .loginArea .btn button:hover {
     background: #FFE035;
     color: #333; }
 
